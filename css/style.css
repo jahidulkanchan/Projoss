@@ -1,0 +1,132 @@
+/* ============  Typhography  Start ============= */
+:root {
+  --primary-color: #fe0000;
+}
+body {
+  overflow-x: hidden;
+}
+img {
+  width: 100%;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.btn-primary a{
+  border: 1px solid #00000000;
+  padding: 12px 30px;
+  color: #000000;
+  background-color: #dbdbdb;
+  border-radius: 8px;
+  font-weight: 700;
+  filter: drop-shadow(0px 0px 20px rgba(20, 20, 20, 0.527));
+}
+/* ============ Typhography  End ============= */
+
+/* ============ Header Start ============= */
+
+header {
+  background: linear-gradient(180deg, #dbdbdb, #e7e7e7);
+  min-height: 100px;
+}
+header .contact-info {
+  font-weight: 600;
+  background-color: #ffffff;
+}
+header .logo img {
+  width: 180px;
+}
+header .menu-bar {
+  display: none;
+  font-size: 25px;
+}
+header .menu-bar i {
+  cursor: pointer;
+}
+.header-menu ul {
+  display: flex;
+}
+.header-menu ul li a {
+  color: #2c2c2c;
+  font-weight: 700;
+  padding: 0px 5px;
+  text-shadow: -10px 10px 0px #2c2c2c00;
+  transition: all .3s ease;
+}
+.header-menu ul li a:hover{
+  text-shadow: 0px 0px 0px #2c2c2c;
+}
+
+@media (max-width: 768px) {
+  .header-menu ul {
+    display: block;
+    transform: scaleY(0);
+    transform-origin: top;
+    position: absolute;
+    padding: 40px 0px;
+    top: 117px;
+    left: 0;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    background: linear-gradient(#e8e8e8, #abaaaa);
+    transition: all 0.2s ease-out;
+  }
+  .header-menu .active{
+    opacity: 1;
+    transform: scaleY(1);
+  }
+  .header-menu ul li:first-child{
+    margin-top: 0px;
+  }
+  .header-menu ul li{
+    margin: 8px 0px;
+  }
+  header .menu-bar {
+    display: block;
+  }
+}
+@media (max-width: 576px) {
+  .header-menu ul {
+    top: 107px;
+  }
+  header .logo img {
+    width: 140px;
+  }
+  header .location{
+    display: none;
+  }
+}
+/* ============  Header End ============= */
+
+/* ============ Hero-section Start ============= */
+.hero-section{
+  background-image: linear-gradient(260deg,#006713,#399a3956);
+  min-height: 500px;
+  color: #000000;
+}
+.hero-section h1{
+  font-size: 55px;
+  font-weight: 700;
+}
+.hero-section p{
+  font-weight: 600;
+}
+/* ============ Hero-section End ============= */
+
+
+
+/* ============    Start ============= */
+/* ============    End ============= */
+/* ============    Start ============= */
+/* ============    End ============= */
+/* ============    Start ============= */
+/* ============    End ============= */
+/* ============    Start ============= */
+/* ============    End ============= */
+/* ============    Start ============= */
+/* ============    End ============= */
+/* ============    Start ============= */
+/* ============    End ============= */
