@@ -352,7 +352,16 @@ header .menu-bar i {
   transform: scaleY(1);
 }
 .service-items .item .icon{
+  margin: 0 auto;
   font-size: 25px;
+  border: 1px solid black;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  background-color: #fcfcfc;
 }
 /* ============  Our Service  End ============= */
 
