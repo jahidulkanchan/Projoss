@@ -180,9 +180,6 @@ header .menu-bar i {
   border-radius: 70px;
   content: "";
   position: absolute;
-  top: 50%;
-  left: 50%;
-  translate: -50% -50%;
   background: conic-gradient(#002aff,#3cff01,#0033ff);
   padding: 25px;
   z-index: -1;
