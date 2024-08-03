@@ -42,9 +42,9 @@ a {
   position: absolute;
   width: 100%; /* Half width */
   height: 50%; /* Full height */
-  transition: transform 0.3s ease; /* Transition for the animations */
+  transition: transform 0.2s ease; /* Transition for the animations */
   z-index: -1; /* Positioned behind the text */
-  background-color: #00841f;
+  background-color: #03c630;
 }
 .btn-primary a::before {
  /* Red color */
@@ -178,7 +178,7 @@ header .menu-bar i {
   top: 50%;
   left: 50%;
   translate: -50% -50%;
-  background: conic-gradient(#002aff,#1eff00,#0033ff);
+  background: conic-gradient(#002aff,#14a800,#0033ff);
   padding: 25px;
   z-index: -1;
   animation: animated-icon 3s 0s infinite linear;
