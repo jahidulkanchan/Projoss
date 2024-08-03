@@ -197,7 +197,7 @@ header .menu-bar i {
   background: conic-gradient(#002aff, #3cff01, #0033ff);
   padding: 25px;
   z-index: -1;
-  animation: animated-icon 3s 0s infinite linear;
+  animation: animated-icon 4s 0s infinite linear;
 }
 .pricing-section .badge-icon::before {
   filter: blur(15px);
@@ -259,9 +259,6 @@ header .menu-bar i {
   overflow-x: hidden;
   white-space: nowrap;
 }
-/* .animation-slider:hover .slider-images {
-  animation-play-state: paused;
-} */
 .slider-images {
   display: inline-block;
   animation: brand 35s linear 0s infinite;
@@ -269,7 +266,7 @@ header .menu-bar i {
 }
 .animation-reverse {
   display: inline-block;
-  animation: brand-reverse 35s linear 0s infinite;
+  animation: brand-reverse 36s linear 0s infinite;
 }
 .slider-images img {
   /* filter: grayscale(100%); */
@@ -279,6 +276,9 @@ header .menu-bar i {
   margin: 0 40px;
   padding: 0x 40px;
 }
+/* .animation-reverse img{
+  filter: grayscale(0%);
+} */
 .slider-images .tech {
   text-align: center;
   display: inline-block;
@@ -286,12 +286,11 @@ header .menu-bar i {
   font-weight: 600;
   user-select: none;
 }
-
-/* .animation-slider:hover .slider-images {
-  animation-play-state: paused;
-} */
-.slider-images img:hover {
+/* .slider-images img:hover {
   filter: grayscale(0%);
+} */
+ .animation-slider:hover .slider-images {
+  animation-play-state: paused;
 }
 @keyframes brand {
   from {
@@ -309,10 +308,55 @@ header .menu-bar i {
     transform: translateX(0);
   }
 }
-
 /* ============  Our Sponsor  End ============= */
-/* ============    Start ============= */
-/* ============    End ============= */
+
+
+/* ============  Our Service  Start ============= */
+.service-section{
+  min-height: 700px;
+  background-color: #fcfcfc;
+  /* background-image: url('../images/shape-2.svg');
+  background-size: cover;
+  background-position: top left;
+  background-repeat: no-repeat; */
+  /* background-attachment: fixed; */
+}
+.service-items .item{
+  position: relative;
+  min-height: 100px;
+  padding: 25px;
+  margin: 10px 0px;
+  color: #000000;
+  border: 1px solid #7a7a7a84;
+  background-color: #adafad7a;
+  border-radius: 7px;
+  backdrop-filter: blur(5px);
+  font-size: 20px;
+  font-weight: 600;
+  overflow: hidden;
+}
+.service-items .item::after{
+  top: 0;
+  left: 0;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #00db66;
+  z-index: -1;
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: all .2s ease;
+}
+.service-items .item:hover::after{
+  transform: scaleY(1);
+}
+.service-items .item .icon{
+  font-size: 25px;
+}
+/* ============  Our Service  End ============= */
+
+
 /* ============    Start ============= */
 /* ============    End ============= */
 /* ============    Start ============= */
