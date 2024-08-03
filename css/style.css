@@ -223,6 +223,26 @@ header .menu-bar i {
 .sponsor-content {
   margin-bottom: 50px;
 }
+.animation-slider{
+  position: relative;
+}
+
+.animation-slider::after,.animation-slider::before{
+  top: 0;
+  width: 40px;
+  height: 100%;
+  content: '';
+  position: absolute;
+}
+.animation-slider::after{
+  left: 0px;
+  background: linear-gradient(90deg,#fcfcfc,#fefefe00);
+}
+.animation-slider::before{
+  right: 0px;
+  background: linear-gradient(-90deg,#fcfcfc,#fefefe00);
+  z-index: 2;
+}
 .animation-slider,
 .slider-reverse {
   margin-top: 20px;
