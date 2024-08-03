@@ -2,7 +2,7 @@
 :root {
   --primary-color: #fe0000;
 }
-*{
+* {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
@@ -33,12 +33,12 @@ a {
   transition: color 0.2s ease; /* Transition for text color */
   z-index: 2;
 }
-.btn-primary a:hover{
+.btn-primary a:hover {
   color: #ffffff;
 }
 .btn-primary a::before,
 .btn-primary a::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 50%;
@@ -47,13 +47,13 @@ a {
   background-color: #03c630;
 }
 .btn-primary a::before {
- /* Red color */
+  /* Red color */
   left: 0; /* Start from the left */
   top: 0;
   transform: translateX(-100%); /* Initially hidden */
 }
 .btn-primary a::after {
- /* Green color */
+  /* Green color */
   right: 0; /* Start from the right */
   bottom: 0;
   transform: translateX(100%); /* Initially hidden */
@@ -62,7 +62,10 @@ a {
   transform: translateX(0);
 }
 .btn-primary a:hover::after {
-  transform: translateX(0); 
+  transform: translateX(0);
+}
+.top-content h1 {
+  font-size: 4rem;
 }
 /* ============ Typhography  End ============= */
 
@@ -126,14 +129,11 @@ header .menu-bar i {
 
 /* ============ Pricing section   Start ============= */
 .pricing-section {
-  padding: 150px 0px;
+  padding: 50px 0px;
   min-height: 700px;
   background-color: #fcfcfc;
 }
-.top-content h1{
-  font-size: 4rem;
-}
-.top-content p{
+.top-content p {
   margin: 0 auto;
   width: 65%;
   color: #8f8f8f;
@@ -147,7 +147,7 @@ header .menu-bar i {
   z-index: 1;
   color: #ffffff;
 }
-.pricing-section .price h2{
+.pricing-section .price h2 {
   font-weight: bold;
 }
 .pricing-section .card-2 {
@@ -155,7 +155,7 @@ header .menu-bar i {
   min-height: 550px;
   box-shadow: 5px 15px 20px #2d2d2dab;
 }
-.pricing-section .price h2 span{
+.pricing-section .price h2 span {
   font-size: 20px;
   color: #e8e8e8;
   font-weight: 500;
@@ -174,13 +174,14 @@ header .menu-bar i {
   font-size: 30px;
   /* box-shadow: 0px 0px 5px #000000; */
 }
-.pricing-section .badge-icon::after,.pricing-section .badge-icon::before {
+.pricing-section .badge-icon::after,
+.pricing-section .badge-icon::before {
   width: 70px;
   height: 70px;
   border-radius: 70px;
   content: "";
   position: absolute;
-  background: conic-gradient(#002aff,#3cff01,#0033ff);
+  background: conic-gradient(#002aff, #3cff01, #0033ff);
   padding: 25px;
   z-index: -1;
   animation: animated-icon 3s 0s infinite linear;
@@ -188,30 +189,94 @@ header .menu-bar i {
 .pricing-section .badge-icon::before {
   filter: blur(15px);
 }
-.pricing-section .card ul li{
+.pricing-section .card ul li {
   margin: 5px 0px;
 }
 @keyframes animated-icon {
-  from{
+  from {
     transform: rotate(-360deg);
   }
-  to{
+  to {
     transform: rotate(360deg);
   }
 }
-.pricing-section .disable{
+.pricing-section .disable {
   color: #999999;
   text-decoration: line-through;
 }
-.pricing-section ul{
+.pricing-section ul {
   max-width: 200px;
   margin: 0% auto;
   text-align: left;
 }
 /* ============ Pricing section   End ============= */
 
-/* ============    Start ============= */
-/* ============    End ============= */
+/* ============  Our Sponsor  Start ============= */
+.our-sponsor {
+  background-color: #fcfcfc;
+  padding: 30px 0;
+}
+.sponsor-content {
+  margin-bottom: 50px;
+}
+.animation-slider,
+.slider-reverse {
+  margin-top: 20px;
+  overflow-x: hidden;
+  white-space: nowrap;
+}
+/* .animation-slider:hover .slider-images {
+  animation-play-state: paused;
+} */
+.slider-images {
+  display: inline-block;
+  animation: brand 35s linear 0s infinite;
+  margin-bottom: 30px;
+}
+.animation-reverse {
+  display: inline-block;
+  animation: brand-reverse 35s linear 0s infinite;
+}
+.slider-images img {
+  /* filter: grayscale(100%); */
+  transition: all 0.2s ease;
+  cursor: pointer;
+  width: 100px;
+  margin: 0 40px;
+  padding: 0x 40px;
+}
+.slider-images .tech {
+  text-align: center;
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 600;
+  user-select: none;
+}
+
+/* .animation-slider:hover .slider-images {
+  animation-play-state: paused;
+} */
+.slider-images img:hover {
+  filter: grayscale(0%);
+}
+@keyframes brand {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+@keyframes brand-reverse {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* ============  Our Sponsor  End ============= */
 /* ============    Start ============= */
 /* ============    End ============= */
 /* ============    Start ============= */
@@ -225,11 +290,14 @@ header .menu-bar i {
     margin-top: 50px;
     min-height: 500px;
   }
-  .top-content p{
+  .top-content p {
     width: 100%;
   }
 }
 @media (max-width: 768px) {
+  .top-content h1 {
+    font-size: 2.3rem;
+  }
   .header-menu ul {
     display: block;
     transform: scaleY(0);
@@ -256,6 +324,18 @@ header .menu-bar i {
   }
   header .menu-bar {
     display: block;
+  }
+
+  /* ========= */
+  .our-sponsor .slider-images img {
+    width: 80px;
+    margin: 0 10px;
+  }
+  .our-sponsor .slider-images {
+    margin-bottom: 0px;
+  }
+  .our-sponsor .slider-images .tech {
+    font-size: 18px;
   }
 }
 @media (max-width: 576px) {
