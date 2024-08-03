@@ -183,7 +183,7 @@ header .menu-bar i {
   top: 50%;
   left: 50%;
   translate: -50% -50%;
-  background: conic-gradient(#002aff,#14a800,#0033ff);
+  background: conic-gradient(#002aff,#3cff01,#0033ff);
   padding: 25px;
   z-index: -1;
   animation: animated-icon 3s 0s infinite linear;
