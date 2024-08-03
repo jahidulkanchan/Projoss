@@ -147,7 +147,7 @@ header .menu-bar i {
   z-index: 1;
   color: #ffffff;
 }
-.pricing-section li i{
+.pricing-section li i {
   display: inline-block;
   margin-right: 5px;
 }
@@ -223,24 +223,25 @@ header .menu-bar i {
 .sponsor-content {
   margin-bottom: 50px;
 }
-.animation-slider{
+.animation-slider {
   position: relative;
 }
 
-.animation-slider::after,.animation-slider::before{
+.animation-slider::after,
+.animation-slider::before {
   top: 0;
   width: 40px;
   height: 100%;
-  content: '';
+  content: "";
   position: absolute;
 }
-.animation-slider::after{
+.animation-slider::after {
   left: 0px;
-  background: linear-gradient(90deg,#fcfcfc,#fefefe00);
+  background: linear-gradient(90deg, #fcfcfc, #fefefe00);
 }
-.animation-slider::before{
+.animation-slider::before {
   right: 0px;
-  background: linear-gradient(-90deg,#fcfcfc,#fefefe00);
+  background: linear-gradient(-90deg, #fcfcfc, #fefefe00);
   z-index: 2;
 }
 .animation-slider,
@@ -360,6 +361,10 @@ header .menu-bar i {
   }
   .our-sponsor .slider-images .tech {
     font-size: 18px;
+  }
+  .our-sponsor .animation-slider::after,
+  .our-sponsor .animation-slider::before {
+    display: none;
   }
 }
 @media (max-width: 576px) {
