@@ -147,6 +147,10 @@ header .menu-bar i {
   z-index: 1;
   color: #ffffff;
 }
+.pricing-section li i{
+  display: inline-block;
+  margin-right: 5px;
+}
 .pricing-section .price h2 {
   font-weight: bold;
 }
