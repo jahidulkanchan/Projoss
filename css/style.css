@@ -35,9 +35,6 @@ a {
   transition: color 0.2s ease; /* Transition for text color */
   z-index: 2;
 }
-.btn-primary a:hover {
-  color: #ffffff;
-}
 .btn-primary a::before,
 .btn-primary a::after {
   content: "";
@@ -52,19 +49,19 @@ a {
   /* Red color */
   left: 0; /* Start from the left */
   top: 0;
-  transform: translateX(-100%); /* Initially hidden */
+  transform: translateX(0%); /* Initially hidden */
 }
 .btn-primary a::after {
   /* Green color */
   right: 0; /* Start from the right */
   bottom: 0;
-  transform: translateX(100%); /* Initially hidden */
+  transform: translateX(0%); /* Initially hidden */
 }
 .btn-primary a:hover::before {
-  transform: translateX(0);
+  transform: translateX(-100%);
 }
 .btn-primary a:hover::after {
-  transform: translateX(0);
+  transform: translateX(100%);
 }
 .top-content h1 {
   font-size: 3.5rem;
@@ -442,12 +439,12 @@ header .menu-bar i {
 /* ============ FAQ Section Start ============= */
 
 .faq-section {
+  background-color: #fcfcfc;
   min-height: 600px;
 }
 /*  .accordion-progress  */
 .faq-section .accordion-progress {
   padding: 50px 0px 0px 0px;
-  background-color: #ffffff;
   min-height: 300px;
 }
 .faq-section .accordion-part {
@@ -482,6 +479,16 @@ header .menu-bar i {
 
 /* ============  FAQ Section End ============= */
 
+
+/* ============  Build website  Start ============= */
+.building-website{
+  background-color: #fcfcfc;
+}
+/* ============  Build website End ============= */
+
+
+
+
 /* ============  Footer  Start ============= */
 footer {
   background-color: #d5d3d3;
@@ -494,10 +501,6 @@ footer a {
   margin-right: 5px;
 }
 /* ============  Footer   End ============= */
-
-/* ============    Start ============= */
-/* ============    End ============= */
-
 /* ============    Start ============= */
 /* ============    End ============= */
 
