@@ -484,6 +484,13 @@ header .menu-bar i {
 .building-website{
   background-color: #fcfcfc;
 }
+.building-website .list li{
+  margin: 10px 0px;
+  padding: 10px 30px;
+  /* background-color: #08b76b37; */
+  box-shadow: 5px 5px 10px #4040401f;
+  border-radius: 5px;
+}
 /* ============  Build website End ============= */
 
 
