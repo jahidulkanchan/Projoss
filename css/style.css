@@ -66,7 +66,7 @@ a {
   transform: translateX(0);
 }
 .top-content h1 {
-  font-size: 4rem;
+  font-size: 3.5rem;
 }
 /* ============ Typhography  End ============= */
 
@@ -226,7 +226,7 @@ header .menu-bar i {
 /* ============ Pricing section   End ============= */
 
 /* ============  Our Sponsor  Start ============= */
-.our-sponsor {
+.technology-section {
   background-color: #fcfcfc;
   padding: 30px 0;
 }
@@ -378,17 +378,40 @@ header .menu-bar i {
   background-color: var(--primary-color);
 }
 .project-section .item{
+  position: relative;
   min-height: 200px;
   padding: 5px 10px;
-  background-color: #08B76B;
+  box-shadow: 0px 3px 15px #d3d3d39f;
   margin: 5px;
+}
+.project-section .item:hover  .btn-primary a{
+  transform: scale(1);
 }
 .project-section .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
   font-size: 35px;
   border: none;
   background: none;
   color: #000000;
-  margin: 0px 5px;
+}
+.project-section .owl-theme .owl-nav [class*=owl-]:hover {
+  background:none;
+  color: #000000;
+  text-decoration: none;
+}
+.project-section .btn-primary{
+  text-align: center;
+  bottom: 10px;
+  right: 0px;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+
+}
+.project-section .btn-primary a{
+  background-color: #f0f0f0;
+  box-shadow: 0px 5px 20px #202020a3;
+  transform: scale(0);
+  transition: all .4s ease;
 }
 /* ============ Our Projects End ============= */
 
@@ -396,13 +419,13 @@ header .menu-bar i {
 
 /* ============  Footer  Start ============= */
 footer{
-  background-color: var(--primary-color);
+  background-color: #d5d3d3;
   padding: 20px 0px;
   text-align: center;
 }
 footer a{
   font-weight: 600;
-  color: #585858;
+  color: #777777;
   margin-right: 5px;
 }
 /* ============  Footer   End ============= */
@@ -454,14 +477,14 @@ footer a{
   }
 
   /* ========= */
-  .our-sponsor .slider-images img {
+  .technology-section .slider-images img {
     width: 80px;
     margin: 0 10px;
   }
-  .our-sponsor .slider-images {
+  .technology-section .slider-images {
     margin-bottom: 0px;
   }
-  .our-sponsor .slider-images .tech {
+  .technology-section .slider-images .tech {
     font-size: 18px;
   }
 }
@@ -475,10 +498,10 @@ footer a{
   header .location {
     display: none;
   }
-  .our-sponsor .slider-images img {
+  .technology-section .slider-images img {
     width: 60px;
   }
-  .our-sponsor .slider-images .tech {
+  .technology-section .slider-images .tech {
     font-size: 16px;
   }
 }
