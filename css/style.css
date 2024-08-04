@@ -372,7 +372,7 @@ header .menu-bar i {
 /* ============  Our Service  End ============= */
 
 
-/* ============    Start ============= */
+/* ============  Footer  Start ============= */
 footer{
   background-color: var(--primary-color);
   padding: 20px 0px;
@@ -382,11 +382,14 @@ footer a{
   color: #585858;
   margin-right: 5px;
 }
-/* ============    End ============= */
+/* ============  Footer   End ============= */
+
 /* ============    Start ============= */
 /* ============    End ============= */
 /* ============    Start ============= */
 /* ============    End ============= */
+
+/* ============    Start ============= */
 @media (max-width: 992px) {
   .pricing-section .card-2 {
     margin-top: 50px;
@@ -457,3 +460,4 @@ footer a{
     font-size: 16px;
   }
 }
+/* ============    End ============= */
