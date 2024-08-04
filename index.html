@@ -15,6 +15,9 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <div id="progress">
+      <span id="progress-value">&#x1F815;</span>
+    </div>
     <header>
       <div
         class="contact-info d-flex justify-content-center py-2 gap-3 gap-md-4"
@@ -36,10 +39,11 @@
           </div>
           <div class="header-menu">
             <ul class="pt-2 gap-md-2 gap-lg-4" id="header-menu">
-              <li><a href="https://projoss.com/">Home</a></li>
-              <li><a href="https://projoss.com/project/">All Project</a></li>
-              <li><a href="https://projoss.com/services/">Our Services</a></li>
-              <li><a href="https://projoss.com/team-skills/">Team & Skill</a></li>
+              <li><a href="#heroBanner">Home</a></li>
+              <li><a href="#ourServices">Our Services</a></li>
+              <li><a href="#ourProject">All Project</a></li>
+              <li><a href="#pricingPlan">Pricing Plan</a></li>
+              <li><a href="#faqItem">FAQ</a></li>
             </ul>
           </div>
             <div class="header-btn"><a href="https://projoss.com/contact/">Contact</a></div>
@@ -48,7 +52,7 @@
       </div>
     </header>
     <main>
-      <section class="hero-section py-5">
+      <section id="heroBanner" class="hero-section py-5">
         <div class="container">
           <div class="row flex-row-reverse align-items-center">
             <div class="col-md-6">
@@ -209,7 +213,7 @@
           </div>
         </div>
       </section>
-      <section class="service-section">
+      <section id="ourServices" class="service-section">
         <div class="container">
           <div class="top-content mb-4 text-center">
             <h1 class="fw-bold">Our Services</h1>
@@ -310,7 +314,7 @@
           </div>
         </div>
       </section>
-      <section class="project-section py-4  py-lg-5">
+      <section id="ourProject" class="project-section py-4  py-lg-5">
         <div class="container">
           <div class="top-content text-center">
             <h1 class="fw-bold">Our Project Section</h1>
@@ -343,7 +347,7 @@
             </div>
           </div>
       </section>
-      <section class="pricing-section">
+      <section id="pricingPlan" class="pricing-section">
         <div class="container">
           <div class="top-content text-center">
             <h1 class="fw-bold">Our Pricing Plan</h1>
@@ -571,7 +575,7 @@
           </div>
         </div>
       </section>
-      <section class="faq-section py-4 py-lg-5">
+      <section id="faqItem" class="faq-section py-4 py-lg-5">
         <div class="container">
           <div class="row align-items-center flex-lg-row-reverse">
             <div class="col-lg-5">

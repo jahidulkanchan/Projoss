@@ -69,6 +69,33 @@ a {
 .top-content h1 {
   font-size: 3.5rem;
 }
+/* ============= Scroll to Top Start ================ */
+#progress {
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  height: 60px;
+  width: 60px;
+  display: none;
+  place-items: center;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  z-index: 9999;
+}
+#progress-value {
+  display: block;
+  height: calc(100% - 8px);
+  width: calc(100% - 8px);
+  background-color: #fcfcfc;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 28px;
+  font-weight: 700;
+  color: #08b76b;
+}
+/* ============= Scroll to Top End ================ */
 /* ============ Typhography  End ============= */
 
 /* ============ Header Start ============= */
@@ -548,6 +575,13 @@ footer a {
   }
 }
 @media (max-width: 768px) {
+  #progress {
+    height: 50px;
+    width: 50px;
+  }
+  #progress-value {
+    font-size: 24px;
+  }
   .top-content h1 {
     font-size: 2.3rem;
   }
