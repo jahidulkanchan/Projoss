@@ -108,7 +108,7 @@ header .menu-bar i {
 
 /* ============ Hero-section Start ============= */
 .hero-section {
-  background-color: #e6e6e6;
+  background-color: #fcfcfc;
   color: #000000;
 }
 .hero-section h1 {
@@ -316,11 +316,10 @@ header .menu-bar i {
 .service-section{
   min-height: 700px;
   background-color: #fcfcfc;
-  /* background-image: url('../images/shape-2.svg');
+  background-image: url('../images/bg-shape1.svg');
   background-size: cover;
-  background-position: top left;
-  background-repeat: no-repeat; */
-  /* background-attachment: fixed; */
+  background-position: top center;
+  background-repeat: no-repeat;
 }
 .service-items .item{
   display: flex;
@@ -329,12 +328,12 @@ header .menu-bar i {
   align-items: center;
   position: relative;
   min-height: 160px;
-  padding: 25px;
+  padding: 10px;
   margin: 10px 0px;
   color: #000000;
   /* border: 1px solid #7a7a7a84; */
-  background-color: #adafad7a;
-  box-shadow: 5px 5px 15px #a9a9a9ac;
+  background-color: #b6b6b676;
+  box-shadow: 5px 5px 15px #777777ac;
   border-radius: 7px;
   backdrop-filter: blur(5px);
   font-size: 20px;
@@ -366,7 +365,8 @@ header .menu-bar i {
   justify-content: center;
   align-items: center;
   border-radius: 30px;
-  background-color: #fcfcfc;
+  background-color: #000000;
+  color: var(--primary-color);
 }
 /* ============  Our Service  End ============= */
 
