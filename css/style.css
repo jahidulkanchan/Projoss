@@ -331,10 +331,10 @@ header .menu-bar i {
   padding-bottom: 50px;
   min-height: 700px;
   background-color: #fcfcfc;
-  background-image: url('../images/Shape-7.png');
+  /* background-image: url('../images/Shape-7.png');
   background-size: cover;
   background-position: top center;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
 }
 .service-items .item {
   display: flex;
@@ -439,6 +439,49 @@ header .menu-bar i {
 }
 /* ============ Our Projects End ============= */
 
+/* ============ FAQ Section Start ============= */
+
+.faq-section {
+  min-height: 600px;
+}
+/*  .accordion-progress  */
+.faq-section .accordion-progress {
+  padding: 50px 0px 0px 0px;
+  background-color: #ffffff;
+  min-height: 300px;
+}
+.faq-section .accordion-part {
+  margin-bottom: 80px;
+}
+.faq-section .accordion-body {
+  box-shadow: 0px 0px 2px 0px rgb(202, 202, 202);
+  background-color: #efefef !important;
+  padding: 5px 10px !important;
+}
+.faq-section .accordion-button {
+  font-size: 20px;
+  font-weight: 500;
+  border: 1px solid gainsboro;
+  color: #000000 !important;
+  background-color: #f5f5f5 !important;
+}
+.faq-section .accordion-button:focus {
+  box-shadow: none !important;
+  border: 1px solid gainsboro;
+}
+.faq-section .accordion-button:not(.collapsed) {
+  color: var(--dark-green) !important;
+}
+.faq-section .accordion-button::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
+  transform: rotate(180deg);
+}
+.faq-section .accordion-button:not(.collapsed):after {
+  transform: rotate(360deg);
+}
+
+/* ============  FAQ Section End ============= */
+
 /* ============  Footer  Start ============= */
 footer {
   background-color: #d5d3d3;
@@ -451,9 +494,6 @@ footer a {
   margin-right: 5px;
 }
 /* ============  Footer   End ============= */
-
-/* ============    Start ============= */
-/* ============    End ============= */
 
 /* ============    Start ============= */
 /* ============    End ============= */
@@ -544,6 +584,9 @@ footer a {
   }
   .technology-section .slider-images .tech {
     font-size: 16px;
+  }
+  .faq-section .accordion-button {
+    font-size: 18px;
   }
 }
 /* ============    End ============= */
