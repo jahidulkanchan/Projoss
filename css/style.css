@@ -312,6 +312,7 @@ header .menu-bar i {
 /* ============  Our Sponsor  End ============= */
 
 
+
 /* ============  Our Service  Start ============= */
 .service-section{
   padding-bottom: 50px;
@@ -372,6 +373,27 @@ header .menu-bar i {
 /* ============  Our Service  End ============= */
 
 
+/* ============ Our Projects Start ============= */
+.project-section{
+  background-color: var(--primary-color);
+}
+.project-section .item{
+  min-height: 200px;
+  padding: 5px 10px;
+  background-color: #08B76B;
+  margin: 5px;
+}
+.project-section .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
+  font-size: 35px;
+  border: none;
+  background: none;
+  color: #000000;
+  margin: 0px 5px;
+}
+/* ============ Our Projects End ============= */
+
+
+
 /* ============  Footer  Start ============= */
 footer{
   background-color: var(--primary-color);
@@ -385,8 +407,7 @@ footer a{
 }
 /* ============  Footer   End ============= */
 
-/* ============    Start ============= */
-/* ============    End ============= */
+
 /* ============    Start ============= */
 /* ============    End ============= */
 
