@@ -379,6 +379,7 @@ footer{
   text-align: center;
 }
 footer a{
+  font-weight: 600;
   color: #585858;
   margin-right: 5px;
 }
