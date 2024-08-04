@@ -71,8 +71,12 @@ a {
 /* ============ Header Start ============= */
 
 header {
-  background: linear-gradient(180deg, #fcfcfc, #d5d5d5);
+  width: 100%;
+  top: -40px;
+  position: sticky;
+  background: linear-gradient(180deg, #e3e3e3,#fcfcfc);
   min-height: 100px;
+  z-index: 999999;
 }
 header .contact-info {
   font-weight: 600;
@@ -136,7 +140,7 @@ header .menu-bar i {
   height: 25px;
   border-radius: 50%;
   background-color: #292929;
-  filter: drop-shadow(7px 10px 7px #00ff40);
+  filter: drop-shadow(7px 10px 7px var(--dark-green));
   animation: animated-shadow 1.4s 0s infinite alternate linear;
 }
 @keyframes animated-shadow {
@@ -498,7 +502,7 @@ header .menu-bar i {
 
 /* ============  Footer  Start ============= */
 footer {
-  background-color: #d5d3d3;
+  background: linear-gradient(180deg, #fcfcfc, #dadada);
   padding: 20px 0px;
   text-align: center;
 }
