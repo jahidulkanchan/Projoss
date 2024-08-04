@@ -26,7 +26,7 @@ a {
   display: inline-block;
   border: none;
   padding: 12px 30px;
-  color: #000000e7;
+  color: #ffffff;
   background-color: #ffffff;
   box-shadow: 0px 0px 10px rgba(128, 128, 128, 0.112);
   border-radius: 8px;
@@ -34,6 +34,9 @@ a {
   overflow: hidden;
   transition: color 0.2s ease; /* Transition for text color */
   z-index: 2;
+}
+.btn-primary a:hover{
+  color: #000000;
 }
 .btn-primary a::before,
 .btn-primary a::after {
@@ -455,23 +458,31 @@ header .menu-bar i {
   margin-bottom: 80px;
 }
 .faq-section .accordion-body {
-  box-shadow: 0px 0px 2px 0px rgb(202, 202, 202);
-  background-color: #efefef !important;
+  box-shadow: 0px 0px 2px 0px #cacaca54;
+  background-color: #fcfcfc !important;
   padding: 5px 10px !important;
 }
 .faq-section .accordion-button {
+  margin-bottom: 5px;
   font-size: 20px;
   font-weight: 500;
-  border: 1px solid gainsboro;
+  border:none !important;
+  outline: none !important;
   color: #000000 !important;
-  background-color: #f5f5f5 !important;
+  background-color: #ffffff !important;
+  box-shadow: 0px 2px 10px #c7c7c72f;
 }
+/* .faq-section .accordion-item {
+  background-color: var(--primary-color) !important;
+
+} */
 .faq-section .accordion-button:focus {
   box-shadow: none !important;
   border: 1px solid gainsboro;
 }
 .faq-section .accordion-button:not(.collapsed) {
   color: var(--dark-green) !important;
+  background-color: #08b76b37 !important;
 }
 .faq-section .accordion-button::after {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
@@ -548,11 +559,11 @@ footer a {
     padding: 10px 0px;
     top: 117px;
     left: 0;
-    margin: 0 auto;
     text-align: center;
     width: 100%;
-    background: linear-gradient(#e8e8e8, #abaaaa);
+    background: linear-gradient(0deg,#e3e3e3,#fcfcfc);
     transition: all 0.2s ease-out;
+    z-index: 99999;
   }
   .header-menu .active {
     opacity: 1;
