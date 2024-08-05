@@ -542,7 +542,7 @@ header .menu-bar i {
 /* ============  Footer  Start ============= */
 footer {
   background: linear-gradient(180deg, #fcfcfc, #dadada);
-  padding: 20px 0px;
+  padding: 10px 0px;
   text-align: center;
 }
 footer a {
