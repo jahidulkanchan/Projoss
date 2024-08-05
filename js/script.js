@@ -1,8 +1,14 @@
-const menuBar =  document.getElementById('bar');
-const headerMenu = document.getElementById('header-menu');
-menuBar.addEventListener('click',() =>{
-  console.log('menuBar clicked');
-  headerMenu.classList.toggle('active');
+// ======== Toggle Nav bar ==========
+const menuBar = document.getElementById("bar");
+const headerMenu = document.getElementById("header-menu");
+
+menuBar.addEventListener("click", () => {
+  headerMenu.classList.toggle("active");
+});
+document.addEventListener("click", (e) => {
+  e.target.classList == "disable-item"
+    ? headerMenu.classList.remove("active")
+    : "";
 });
 
 // ========= Scroll to Top =========
@@ -10,10 +16,14 @@ let calcScrollValue = () => {
   let scrollProgress = document.getElementById("progress");
   let pos = document.documentElement.scrollTop;
 
-  let calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  let scrollValue = Math.round((pos * 100) / calcHeight); 
+  let calcHeight =
+    document.documentElement.scrollHeight -
+    document.documentElement.clientHeight;
+  let scrollValue = Math.round((pos * 100) / calcHeight);
 
-  pos > 200? scrollProgress.style.display = "grid": scrollProgress.style.display = "none";
+  pos > 200
+    ? (scrollProgress.style.display = "grid")
+    : (scrollProgress.style.display = "none");
   scrollProgress.addEventListener("click", () => {
     document.documentElement.scrollTop = 0;
   });
@@ -23,23 +33,23 @@ let calcScrollValue = () => {
 window.onscroll = calcScrollValue;
 window.onload = calcScrollValue;
 // Owl-carousel
-$('.owl-carousel').owlCarousel({
-  loop:true,
+$(".owl-carousel").owlCarousel({
+  loop: true,
   autoplay: true,
-  margin:10,
-  responsiveClass:true,
-  responsive:{
-      0:{
-          items:1,
-          nav:false
-      },
-      600:{
-          items:3,
-          nav:false
-      },
-      1000:{
-          items:4,
-          nav:true
-      }
-  }
-})
+  margin: 10,
+  responsiveClass: true,
+  responsive: {
+    0: {
+      items: 1,
+      nav: false,
+    },
+    600: {
+      items: 3,
+      nav: false,
+    },
+    1000: {
+      items: 4,
+      nav: true,
+    },
+  },
+});
