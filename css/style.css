@@ -555,7 +555,7 @@ footer a {
 /* ============    Start ============= */
 /* --------contact-form-------------- */
   .contact-form{
-    padding: 50px 0px;
+    padding: 10px 0px;
     min-height: 500px;
     background-color: #fcfcfc;
   }
@@ -564,13 +564,13 @@ footer a {
       margin-top: 40px;
       border-radius: 15px;
       margin-bottom: 30px;
+      background-color: #08b76b37;
   }
   .contact-form .contact-card h5{
       font-weight: bold;
   }
   .contact-form .contact-card{
-      padding: 30px 50px 30px 50px;
-      background-color: #08b76b37;
+      padding: 1.6rem 2.3rem;
       border: none;
       border-radius: 15px;
   }
@@ -586,7 +586,7 @@ footer a {
     transition: all .2s ease;
   }
   .contact-form .contact-card .link:hover{
-   background-color: #08b76b00;
+   background-color: #ffffff;
    color: #000000;
   }
   .contact-card form{
@@ -600,32 +600,6 @@ footer a {
       outline: none;
       border-radius: 10px;
       background-color: #ffffff;
-  }
-  .contact-form .contact-info{
-      margin-top: 40px;
-      box-shadow: 0px 0px 25px 5px #dbdbdb7a;
-      padding: 35px 40px 0px 40px;
-  }
-  .contact-form .contact-info span{
-      font-size: 15px;
-      font-weight: 500;
-      color: #7d7d7d;   
-  }
-  .contact-form .contact-info a{
-    color: #08b76b;
-  }
-  .contact-info h6{
-      font-weight: bolder;
-  }
-  .contact-info ul li{
-      display: inline-block;
-      padding: 0px 3px 30px 3px;
-      margin-bottom: 30px;
-      border-bottom: 1px solid #c9c9c983;
-  }
-  .contact-info li:last-child{
-      border-bottom: none;
-      margin-bottom: 0;
   }
 /* ============    End ============= */
 
