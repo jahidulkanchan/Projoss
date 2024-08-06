@@ -220,82 +220,79 @@
               Explore our web services, including custom website development, responsive design, and e-commerce solutions. We create visually stunning and highly functional websites to enhance your online presence.
             </p>
           </div>
-          <div class="service-items mt-lg-5">
-            <div class="row">
-              <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="service-items mt-lg-5">
+          <div class="row">
+            <div class="col-sm-6 col-md-4 col-lg-3">
                 <div class="item text-center">
                   <div class="icon"><i class="fa-solid fa-briefcase"></i></div>
                   <div class="title">Business Website</div>
                 </div>
-              </div>
-              <div class="col-sm-6 col-md-4 col-lg-3">
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
                 <div class="item text-center">
                   <div class="icon"><i class="fa-solid fa-user"></i></div>
                   <div class="title">Portfolio Website</div>
                 </div>
-              </div>
-              <div class="col-sm-6 col-md-4 col-lg-3">
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
                 <div class="item text-center">
                   <div class="icon"><i class="fa-solid fa-stethoscope"></i></div>
                   <div class="title">Doctor Website</div>
                 </div>
-              </div>
-              <div class="col-sm-6 col-md-4 col-lg-3">
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
                 <div class="item text-center">
                   <div class="icon"><i class="fa-solid fa-capsules"></i></div>
                   <div class="title">pharmacy Website</div>
                 </div>
-              </div>
-              <div class="col-sm-6 col-md-4 col-lg-3">
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
                 <div class="item text-center">
                   <div class="icon"><i class="fa-solid fa-school"></i></div>
                   <div class="title">Educational Website</div>
                 </div>
-              </div>
-              <div class="col-sm-6 col-md-4 col-lg-3">
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
                 <div class="item text-center">
                   <div class="icon"><i class="fa-solid fa-utensils"></i></div>
                   <div class="title">Hotel/Restuarant Website</div>
                 </div>
-              </div>
-              <div class="col-sm-6 col-md-4 col-lg-3">
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
                 <div class="item text-center">
                   <div class="icon"><i class="fa-solid fa-bullhorn"></i></div>
                   <div class="title">Marketing Firm Website</div>
                 </div>
-              </div>
-              <div class="col-sm-6 col-md-4 col-lg-3">
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
                 <div class="item text-center">
                   <div class="icon"><i class="fa-solid fa-cash-register"></i></div>
                   <div class="title">Ecommerce Website</div>
                 </div>
-              </div>
-              <div class="col-sm-6 col-md-4 col-lg-3">
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
                 <div class="item text-center">
                   <div class="icon"><i class="fa-solid fa-chair"></i></div>
                   <div class="title">Furniture Store Website</div>
                 </div>
-              </div>
-              <div class="col-sm-6 col-md-4 col-lg-3">
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
                 <div class="item text-center">
                   <div class="icon"><i class="fa-regular fa-image"></i></div>
                   <div class="title">Vlog Website</div>
                 </div>
-              </div>
-              <div class="col-sm-6 col-md-4 col-lg-3">
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
                 <div class="item text-center">
                   <div class="icon"><i class="fa-solid fa-shop"></i></div>
                   <div class="title">Super Shop Website</div>
                 </div>
-              </div>
-              <div class="col-sm-6 col-md-4 col-lg-3">
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
                 <div class="item text-center">
                   <div class="icon"><i class="fa-solid fa-city"></i></div>
                   <div class="title">corporate Website</div>
                 </div>
-              </div>
-              </div>
-
             </div>
           </div>
         </div>
@@ -745,16 +742,16 @@
                 <div class="contact-card">
                   <h2 class="fw-bold">Contact Us:</h2>
                   <hr />
-                  <form action="#">
+                  <form action="contact.php" method="post">
                     <div class="row">
                       <div class="col-lg-4">
-                        <input type="text" placeholder="Your Name" required />
+                        <input type="text" id="name" placeholder="Your Name" required />
                       </div>
                       <div class="col-lg-4">
-                        <input type="email" placeholder="Your Email" required />
+                        <input type="email" id="email" placeholder="Your Email" required />
                       </div>
                       <div class="col-lg-4">
-                        <input type="text" placeholder="Subject" />
+                        <input type="text" id="subject" placeholder="Subject" />
                       </div>
                       <div class="col-lg-12">
                         <textarea
@@ -762,6 +759,7 @@
                           cols="50"
                           rows="5"
                           placeholder="Your Message.."
+                          id="message"
                           style="width: 100%"></textarea>
                         <input
                           type="submit"
