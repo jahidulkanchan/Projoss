@@ -7,6 +7,10 @@
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+html {
+  overflow-x: hidden;
 }
 body {
   overflow-x: hidden;
@@ -35,7 +39,7 @@ a {
   transition: color 0.2s ease; /* Transition for text color */
   z-index: 2;
 }
-.btn-primary a:hover{
+.btn-primary a:hover {
   color: #000000;
 }
 .btn-primary a::before,
@@ -104,7 +108,7 @@ header {
   width: 100%;
   top: -40px;
   position: sticky;
-  background: linear-gradient(180deg, #e3e3e3,#fcfcfc);
+  background: linear-gradient(180deg, #e3e3e3, #fcfcfc);
   min-height: 100px;
   z-index: 999999;
 }
@@ -200,7 +204,7 @@ header .menu-bar i {
   border-radius: 15px;
   padding: 3rem 0;
   min-height: 600px;
-  background-image: linear-gradient(180deg,#a43bff,#100087);
+  background-image: linear-gradient(180deg, #a43bff, #100087);
   z-index: 1;
   color: #ffffff;
 }
@@ -494,7 +498,7 @@ header .menu-bar i {
   margin-bottom: 5px;
   font-size: 20px;
   font-weight: 500;
-  border:none !important;
+  border: none !important;
   outline: none !important;
   color: #000000 !important;
   background-color: #ffffff !important;
@@ -522,12 +526,11 @@ header .menu-bar i {
 
 /* ============  FAQ Section End ============= */
 
-
 /* ============  Build website  Start ============= */
-.building-website{
+.building-website {
   background-color: #fcfcfc;
 }
-.building-website .list li{
+.building-website .list li {
   margin: 10px 0px;
   padding: 10px 30px;
   /* background-color: #08b76b37; */
@@ -535,9 +538,6 @@ header .menu-bar i {
   border-radius: 5px;
 }
 /* ============  Build website End ============= */
-
-
-
 
 /* ============  Footer  Start ============= */
 footer {
@@ -554,53 +554,54 @@ footer a {
 
 /* ============    Start ============= */
 /* --------contact-form-------------- */
-  .contact-form{
-    padding: 10px 0px;
-    min-height: 500px;
-    background-color: #fcfcfc;
-  }
-  .contact-form .card{
-      border: none;
-      margin-top: 40px;
-      border-radius: 15px;
-      margin-bottom: 30px;
-      background-color: #08b76b37;
-  }
-  .contact-form .contact-card h5{
-      font-weight: bold;
-  }
-  .contact-form .contact-card{
-      padding: 1.6rem 2.3rem;
-      border: none;
-      border-radius: 15px;
-  }
-  .contact-form .contact-card .link{
-    padding: 10px 20px;
-    float: right;
-    border: 1px solid #08b76b;
-    color: #ffffff;
-    border-radius: 7px;
-    font-weight: 600;
-    background-color: #08b76b;
-    width: 150px;
-    transition: all .2s ease;
-  }
-  .contact-form .contact-card .link:hover{
-   background-color: #ffffff;
-   color: #000000;
-  }
-  .contact-card form{
-      margin-top: 40px;
-  }
-  .contact-form input,.contact-card textarea{
-      width: 100%;
-      padding: 6px 12px;
-      margin-bottom: 30px;
-      border: none;
-      outline: none;
-      border-radius: 10px;
-      background-color: #ffffff;
-  }
+.contact-form {
+  padding: 10px 0px;
+  min-height: 500px;
+  background-color: #fcfcfc;
+}
+.contact-form .card {
+  border: none;
+  margin-top: 40px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  background-color: #08b76b37;
+}
+.contact-form .contact-card h5 {
+  font-weight: bold;
+}
+.contact-form .contact-card {
+  padding: 1.6rem 2.3rem;
+  border: none;
+  border-radius: 15px;
+}
+.contact-form .contact-card .link {
+  padding: 10px 20px;
+  float: right;
+  border: 1px solid #08b76b;
+  color: #ffffff;
+  border-radius: 7px;
+  font-weight: 600;
+  background-color: #08b76b;
+  width: 150px;
+  transition: all 0.2s ease;
+}
+.contact-form .contact-card .link:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+.contact-card form {
+  margin-top: 40px;
+}
+.contact-form input,
+.contact-card textarea {
+  width: 100%;
+  padding: 6px 12px;
+  margin-bottom: 30px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
 /* ============    End ============= */
 
 /* ============    Start ============= */
@@ -647,7 +648,7 @@ footer a {
     left: 0;
     text-align: center;
     width: 100%;
-    background: linear-gradient(0deg,#e3e3e3,#fcfcfc);
+    background: linear-gradient(0deg, #e3e3e3, #fcfcfc);
     transition: all 0.2s ease-out;
     z-index: 99999;
   }

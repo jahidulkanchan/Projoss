@@ -6,9 +6,8 @@
     <title>Projoss | JK</title>
     <link rel="shortcut icon" href="images/favicon.webp" type="image/x-icon" />
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
-    />
+      rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
@@ -34,7 +33,7 @@
       </div>
       <div class="container py-3">
         <nav class="d-flex justify-content-between align-items-center">
-          <div class="logo">
+          <div class="logo animate__animated animate__zoomIn">
             <a href="https://projoss.com/"><img src="images/black-logo.webp" alt="" /></a>
           </div>
           <div class="header-menu">
@@ -56,12 +55,12 @@
         <div class="container">
           <div class="row flex-row-reverse align-items-center">
             <div class="col-md-6">
-              <div class="image">
+              <div class="image animate__animated animate__slideInRight">
                 <img src="images/Hero-img.webp" alt="" />
                 <div class="shadow"></div>
               </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 animate__animated animate__slideInLeft">
               <h1 class="pt-5 pt-md-0">
                 We make beautiful websites for all people.
               </h1>
@@ -303,7 +302,7 @@
       </section>
       <section class="token-contact">
         <div class="container">
-          <div class="row cards py-5 px-3 align-items-center">
+          <div class="row cards py-5 px-3 align-items-center wow animate__animated animate__zoomIn">
             <div class="col-md-9 left-item">
               <h5 class="fw-medium mb-3 text-start">If you're unsure which service is right for you?</h5>
               <h2 class="fw-bold">Feel free to contact an expert for a free consultation</h2>
@@ -349,7 +348,7 @@
       </section>
       <section id="pricingPlan" class="pricing-section">
         <div class="container">
-          <div class="top-content text-center">
+          <div class="top-content text-center wow animate__animated animate__fadeInUp">
             <h1 class="fw-bold">Our Pricing Plan</h1>
             <p class="pb-5 mt-3">
               Explore our flexible pricing plans designed to fit your needs and
@@ -359,7 +358,7 @@
             </p>
           </div>
           <div class="row text-center">
-            <div class="col-md-6 col-lg-4">
+            <div class="col-md-6 col-lg-4 wow animate__animated animate__fadeInUp">
               <div class="card">
                 <div class="plan">Basic</div>
                 <div
@@ -417,7 +416,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-6 col-lg-4">
+            <div class="col-md-6 col-lg-4 wow animate__animated animate__fadeInUp">
               <div class="card card-2">
                 <div class="plan">Standard</div>
                 <div
@@ -475,7 +474,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-6 col-lg-4">
+            <div class="col-md-6 col-lg-4 wow animate__animated animate__fadeInUp">
               <div class="card">
                 <div class="plan">Premium</div>
                 <div
@@ -544,10 +543,12 @@
           </div><br>
           <div class="row align-items-center">
             <div class="col-lg-5">
-              <div class="image py-3 py-sm-5"><img src="images/website-build.svg" alt=""></div>
+              <div class="image py-3 py-sm-5 wow animate__animated animate__slideInLeft">
+                <img src="images/website-build.svg" alt="">
+              </div>
             </div>
             <div class="col-lg-7">
-              <div class="list">
+              <div class="list wow animate__animated animate__slideInRight">
                 <ul>
                   <li>
                     <h4>1. Planning and Research:</h4>
@@ -579,9 +580,11 @@
         <div class="container">
           <div class="row align-items-center flex-lg-row-reverse">
             <div class="col-lg-5">
-              <div class="image py-4 py-sm-5"><img src="images/faq.svg" alt=""></div>
+              <div class="image py-4 py-sm-5 wow animate__animated animate__slideInRight">
+                <img src="images/faq.svg" alt="">
+              </div>
             </div>
-            <div class="col-lg-7 pb-1 pb-md-5 wow fadeIn">
+            <div class="col-lg-7 pb-1 pb-md-5 wow animate__animated animate__slideInLeft">
               <h2>Frequently Asked Questions:</h2>
               <br />
               <div class="accordion" id="accordionExample">
@@ -737,7 +740,7 @@
       <section class="contact-form" id="contact">
         <div class="container">
           <div class="row">
-            <div class="offset-lg-1 col-lg-10 wow zoomIn">
+            <div class="offset-lg-1 col-lg-10 wow animate__animated animate__fadeIn">
               <div class="card">
                 <div class="contact-card">
                   <h2 class="fw-bold">Contact Us:</h2>
@@ -783,6 +786,8 @@
      <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"></script>
+    <!-- Wow animate Js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
   <!-- Owl Carousel JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <script src="js/script.js"></script>

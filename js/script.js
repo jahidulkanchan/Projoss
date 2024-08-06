@@ -53,3 +53,6 @@ $(".owl-carousel").owlCarousel({
     },
   },
 });
+
+// wow animate js
+new WOW().init();
