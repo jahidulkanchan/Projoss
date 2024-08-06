@@ -568,6 +568,36 @@ header .menu-bar i {
 }
 /* ============  Build website End ============= */
 
+/* ============    Start ============= */
+.choose-section .item{
+  background-color: #08b76b37;
+  box-shadow: none;
+  }
+/* ============    End ============= */
+
+/* ============    Start ============= */
+.care-service{
+  background-color: #fcfcfc;
+}
+.care-service .item{
+  margin: 10px auto;
+  background-color: white;
+  min-height: 323px;
+  box-shadow: 0px 0px 15px #56565622;
+}
+.care-service .item .icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  min-height: 150px;
+}
+.care-service .item .icon img{
+  width: 100px;
+  height: 100px;
+}
+/* ============    End ============= */
+
 /* ============  Footer  Start ============= */
 footer {
   background: linear-gradient(180deg, #fcfcfc, #dadada);
@@ -582,16 +612,10 @@ footer a {
 /* ============  Footer   End ============= */
 
 
-/* ============    Start ============= */
-.choose-section .item{
-background-color: #08b76b37;
-box-shadow: none;
-}
-/* ============    End ============= */
 
 
-/* ============    Start ============= */
-/* ============    End ============= */
+
+
 /* ============    Start ============= */
 /* ============    End ============= */
 /* ============    Start ============= */
