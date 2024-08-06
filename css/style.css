@@ -480,6 +480,7 @@ header .menu-bar i {
 }
 /* ============ Our Projects End ============= */
 
+
 /* ============  Include service  Start ============= */
 .include-service {
   background-color: #fcfcfc;
@@ -499,8 +500,9 @@ header .menu-bar i {
   width: 100px;
   height: 100px;
 }
-
 /* ============  Include service  End ============= */
+
+
 
 /* ============ FAQ Section Start ============= */
 
@@ -578,8 +580,16 @@ footer a {
   margin-right: 5px;
 }
 /* ============  Footer   End ============= */
+
+
 /* ============    Start ============= */
+.choose-section .item{
+background-color: #08b76b37;
+box-shadow: none;
+}
 /* ============    End ============= */
+
+
 /* ============    Start ============= */
 /* ============    End ============= */
 /* ============    Start ============= */
