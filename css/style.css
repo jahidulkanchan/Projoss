@@ -602,7 +602,6 @@ header .menu-bar i {
 footer {
   background: linear-gradient(180deg, #fcfcfc, #dadada);
   padding: 10px 0px;
-  text-align: center;
 }
 footer a {
   font-weight: 600;
