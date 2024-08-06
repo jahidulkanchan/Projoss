@@ -388,8 +388,8 @@ header .menu-bar i {
   margin: 10px 0px;
   color: #000000;
   /* border: 1px solid #7a7a7a84; */
-  background-color: #02d3a200;
-  box-shadow: 5px 5px 15px #77777726;
+  background-color: #ffffff37;
+  box-shadow: 5px 5px 10px #77777726;
   border-radius: 5px;
   backdrop-filter: blur(5px);
   font-size: 20px;
@@ -403,7 +403,7 @@ header .menu-bar i {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #08b76b37;
+  background-color: #ffffff;
   z-index: -1;
   transform: scaleY(0);
   transform-origin: bottom;
@@ -412,17 +412,10 @@ header .menu-bar i {
 .service-items .item:hover::after {
   transform: scaleY(1);
 }
-.service-items .item .icon {
-  margin: 5px auto;
-  font-size: 25px;
-  width: 50px;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 30px;
-  background-color: #000000;
-  color: #ffffff;
+.service-items .item .icon img{
+  margin-bottom: 5px;
+  width: 40px;
+  height: 40px;
 }
 /* ============  Our Service  End ============= */
 
@@ -488,7 +481,7 @@ header .menu-bar i {
 .include-service .item {
   padding: 0.8rem 1rem;
   margin: 0.8rem 0;
-  box-shadow: 0px 2px 12px #8f8f8f3b;
+  box-shadow: 0px 2px 12px #8f8f8f27;
   border-radius: 8px;
   min-height: 240px;
 }
@@ -570,8 +563,8 @@ header .menu-bar i {
 
 /* ============    Start ============= */
 .choose-section .item{
-  background-color: #08b76b37;
-  box-shadow: none;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px #56565622;
   }
 /* ============    End ============= */
 
