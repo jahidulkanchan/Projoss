@@ -168,6 +168,9 @@ header .menu-bar i {
 .hero-section p {
   font-weight: 600;
 }
+.hero-section .image,.building-website .image,.faq-section .image{
+  filter: drop-shadow(0px 0px 40px #08b74ecc);
+}
 .hero-section .image .shadow {
   margin-top: -24px;
   width: 100%;
