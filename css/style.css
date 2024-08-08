@@ -59,6 +59,10 @@ a {
   font-family: "Roboto", sans-serif;
   /* font-family: "Poppins", sans-serif; */
   font-size: 3.5rem;
+  color: var(--secondary-color);
+}
+h1 span{
+  color: var(--light-green);
 }
 p{
   color: #acacac;
@@ -161,10 +165,96 @@ header .menu-bar i {
 .hero-section h1{
   font-size: 4.5rem;
 }
-.hero-section h1 span{
-  color: var(--light-green);
-}
 /* ============ Hero-section End ============= */
+
+/* ============  Our Sponsor  Start ============= */
+.technology-section {
+  background-color: var(--primary-color);
+  padding: 30px 0;
+}
+.sponsor-content {
+  margin-bottom: 50px;
+}
+.animation-slider {
+  position: relative;
+}
+
+.animation-slider::after,
+.animation-slider::before {
+  top: 0;
+  width: 50px;
+  height: 100%;
+  content: "";
+  position: absolute;
+}
+.animation-slider::after {
+  left: 0px;
+  background: linear-gradient(90deg, #070806, #00000000);
+}
+.animation-slider::before {
+  right: 0px;
+  background: linear-gradient(-90deg,  #070806, #00000000);
+  z-index: 2;
+}
+.animation-slider,
+.slider-reverse {
+  margin-top: 20px;
+  overflow-x: hidden;
+  white-space: nowrap;
+}
+.slider-images {
+  display: inline-block;
+  animation: brand 35s linear 0s infinite;
+  margin-bottom: 30px;
+}
+.animation-reverse {
+  display: inline-block;
+  animation: brand-reverse 36s linear 0s infinite;
+}
+.slider-images img {
+  filter: grayscale(100%);
+  transition: all 0.2s ease;
+  cursor: pointer;
+  width: 80px;
+  /* filter: drop-shadow(0px 5px 10px var(--light-green)); */
+  object-fit: cover;
+  margin: 0 40px;
+  padding: 0x 40px;
+}
+/* .animation-reverse img{
+  filter: grayscale(0%);
+} */
+.slider-images .tech {
+  text-align: center;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 600;
+  user-select: none;
+}
+/* .slider-images img:hover {
+  filter: grayscale(0%);
+} */
+/* .animation-slider:hover .slider-images {
+  animation-play-state: paused;
+} */
+@keyframes brand {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+@keyframes brand-reverse {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+/* ============  Our Sponsor End ============= */
+
 
 /* ============ Pricing section   Start ============= */
 .pricing-section {
@@ -175,7 +265,6 @@ header .menu-bar i {
 .top-content p {
   margin: 0 auto;
   width: 65%;
-  color: #8f8f8f;
 }
 .pricing-section .card {
   margin-top: 50px;
@@ -255,97 +344,11 @@ header .menu-bar i {
 }
 /* ============ Pricing section   End ============= */
 
-/* ============  Our Sponsor  Start ============= */
-.technology-section {
-  background-color: #fcfcfc;
-  padding: 30px 0;
-}
-.sponsor-content {
-  margin-bottom: 50px;
-}
-.animation-slider {
-  position: relative;
-}
-
-.animation-slider::after,
-.animation-slider::before {
-  top: 0;
-  width: 40px;
-  height: 100%;
-  content: "";
-  position: absolute;
-}
-.animation-slider::after {
-  left: 0px;
-  background: linear-gradient(90deg, #fcfcfc, #fefefe00);
-}
-.animation-slider::before {
-  right: 0px;
-  background: linear-gradient(-90deg, #fcfcfc, #fefefe00);
-  z-index: 2;
-}
-.animation-slider,
-.slider-reverse {
-  margin-top: 20px;
-  overflow-x: hidden;
-  white-space: nowrap;
-}
-.slider-images {
-  display: inline-block;
-  animation: brand 35s linear 0s infinite;
-  margin-bottom: 30px;
-}
-.animation-reverse {
-  display: inline-block;
-  animation: brand-reverse 36s linear 0s infinite;
-}
-.slider-images img {
-  /* filter: grayscale(100%); */
-  transition: all 0.2s ease;
-  cursor: pointer;
-  width: 100px;
-  margin: 0 40px;
-  padding: 0x 40px;
-}
-/* .animation-reverse img{
-  filter: grayscale(0%);
-} */
-.slider-images .tech {
-  text-align: center;
-  display: inline-block;
-  font-size: 24px;
-  font-weight: 600;
-  user-select: none;
-}
-/* .slider-images img:hover {
-  filter: grayscale(0%);
-} */
-.animation-slider:hover .slider-images {
-  animation-play-state: paused;
-}
-@keyframes brand {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-100%);
-  }
-}
-@keyframes brand-reverse {
-  from {
-    transform: translateX(-100%);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
-/* ============  Our Sponsor  End ============= */
-
 /* ============  Our Service  Start ============= */
 .service-section {
   padding-bottom: 50px;
   min-height: 700px;
-  background-color: #fcfcfc;
+  background-color: var(--primary-color);
   /* background-image: url('../images/Shape-7.png');
   background-size: cover;
   background-position: top center;
@@ -617,7 +620,7 @@ footer a {
 }
 @media (max-width: 768px) {
   .hero-section h1{
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
   #progress {
     height: 50px;
@@ -663,14 +666,14 @@ footer a {
 
   /* ========= */
   .technology-section .slider-images img {
-    width: 70px;
+    width: 50px;
     margin: 0 10px;
   }
   .technology-section .slider-images {
     margin-bottom: 0px;
   }
   .technology-section .slider-images .tech {
-    font-size: 18px;
+    font-size: 14px;
   }
 }
 @media (max-width: 576px) {
@@ -681,7 +684,7 @@ footer a {
     font-size: 2rem;
   }
   .hero-section .hero-content p{
-    font-size: 14px;
+    font-size: 12px;
   }
   .header-menu ul {
     top: 107px;
@@ -691,6 +694,9 @@ footer a {
   }
   header .location {
     display: none;
+  }
+  .top-content p {
+    font-size: 12px;
   }
   .include-service .icon img {
     width: 60px;
@@ -703,10 +709,10 @@ footer a {
     font-size: .9rem;
   }
   .technology-section .slider-images img {
-    width: 60px;
+    width: 40px;
   }
   .technology-section .slider-images .tech {
-    font-size: 16px;
+    font-size: 12px;
   }
   .faq-section .accordion-button {
     font-size: 18px;
