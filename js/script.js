@@ -11,6 +11,14 @@ document.addEventListener("click", (e) => {
     : "";
 });
 
+// Get Start
+document.getElementById('getStartBtn').addEventListener('click', function(e) {
+  e.preventDefault(); // Prevent the default anchor click behavior
+  window.scrollTo({
+      top: document.querySelector('#tech').offsetTop - 100, 
+      behavior: 'smooth' // Optional: adds smooth scrolling
+  });
+});
 // ========= Scroll to Top =========
 let calcScrollValue = () => {
   let scrollProgress = document.getElementById("progress");
