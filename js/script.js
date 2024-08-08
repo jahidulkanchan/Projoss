@@ -1,3 +1,16 @@
+// Sticky Header
+let navSlide = document.getElementById("header");
+let prevPos = window.scrollY;
+window.addEventListener("scroll", () => {
+  let newPos = window.scrollY;
+  if (newPos > prevPos) {
+    navSlide.classList.add("hide");
+  } else {
+    navSlide.classList.remove("hide");
+  }
+  prevPos = newPos;
+});
+
 // ======== Toggle Nav bar ==========
 const menuBar = document.getElementById("bar");
 const headerMenu = document.getElementById("header-menu");
@@ -10,6 +23,9 @@ document.addEventListener("click", (e) => {
     ? headerMenu.classList.remove("active")
     : "";
 });
+
+
+
 
 // Get Start
 document.getElementById('getStartBtn').addEventListener('click', function(e) {
