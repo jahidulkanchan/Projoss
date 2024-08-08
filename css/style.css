@@ -33,7 +33,7 @@ a {
   position: relative;
   display: inline-block;
   padding: 10px 30px;
-  color: #000000;
+  color: #4e4e4e;
   background-color: var(--light-green);
   border: 1px solid var(--light-green);
   filter: drop-shadow(5px 15px 20px #a7ed0451);
@@ -82,13 +82,13 @@ p{
   display: block;
   height: calc(100% - 8px);
   width: calc(100% - 8px);
-  background-color: #fcfcfc;
+  background-color: var(--primary-color);
   border-radius: 50%;
   display: grid;
   place-items: center;
   font-size: 20px;
   font-weight: 700;
-  color: #08b76b;
+  color: #b3ff00;
 }
 /* ============= Scroll to Top End ================ */
 /* ============ Typhography  End ============= */
