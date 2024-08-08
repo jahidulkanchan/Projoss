@@ -68,6 +68,10 @@ p{
   color: #8b8b8b;
   font-family: "Inter", sans-serif;
 }
+li{
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+}
 /* ============= Scroll to Top Start ================ */
 #progress {
   position: fixed;
@@ -213,11 +217,10 @@ header .menu-bar i {
   animation: brand-reverse 36s linear 0s infinite;
 }
 .slider-images img {
-  filter: grayscale(100%);
+  filter: grayscale(100%) drop-shadow(0px 0px 5px #a7ed045f);
   transition: all 0.2s ease;
   cursor: pointer;
   width: 80px;
-  /* filter: drop-shadow(0px 5px 10px var(--light-green)); */
   object-fit: cover;
   margin: 0 40px;
   padding: 0x 40px;
@@ -422,9 +425,6 @@ header .menu-bar i {
   margin: 5px;
   background-color: var(--light-dark);
 }
-.project-section .item:hover .btn-primary a {
-  transform: scale(1);
-}
 .project-section .owl-carousel .owl-nav button.owl-next,
 .owl-carousel .owl-nav button.owl-prev,
 .owl-carousel button.owl-dot {
@@ -438,7 +438,7 @@ header .menu-bar i {
   color: var(--secondary-color);
   text-decoration: none;
 }
-.project-section .btn-primary {
+.project-section .primary-btn {
   text-align: center;
   bottom: 10px;
   right: 0px;
@@ -446,11 +446,18 @@ header .menu-bar i {
   margin: 0 auto;
   position: absolute;
 }
-.project-section .btn-primary a {
-  background-color: #f0f0f0;
+.project-section .primary-btn a {
+  background-color: var(--light-green);
   box-shadow: 0px 5px 20px #202020a3;
   transform: scale(0);
   transition: all 0.4s ease;
+}
+.project-section .item:hover .primary-btn a {
+  transform: scale(1);
+}
+.project-section .primary-btn a:hover{
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
 }
 /* ============ Our Projects End ============= */
 
@@ -468,11 +475,14 @@ header .menu-bar i {
   border-radius: 5px;
   min-height: 240px;
 }
+.include-service .item  h4{
+  color: var(--light-green);
+}
 .include-service .icon img {
   margin: 5px auto;
   width: 100px;
   height: 100px;
-  filter: drop-shadow( 5px 5px 10px #b3ff00);
+  filter: invert(80%) drop-shadow(0px 0px 20px #a6ec02);
 }
 /* ============  Include service  End ============= */
 
@@ -557,10 +567,22 @@ header .menu-bar i {
 /* ============  Build website End ============= */
 
 /* ============    Start ============= */
+.choose-section{
+  background-color: var(--primary-color);
+}
 .choose-section .item{
+  color: var(--secondary-color);
   background-color: var(--light-dark);
-  backdrop-filter: blur(5px);
+  padding: 0.8rem 1rem;
+  margin: 0.8rem 0;
+  border-radius: 5px;
+  min-height: 306px;
   }
+  .choose-section .icon img {
+    margin: 15px auto;
+    width: 100px;
+    height: 100px;
+}
 /* ============    End ============= */
 
 /* ============    Start ============= */
@@ -587,13 +609,14 @@ header .menu-bar i {
 
 /* ============  Footer  Start ============= */
 footer {
-  background: linear-gradient(180deg, #fcfcfc, #dadada);
+  color: #ffffff;
+  background-color: var(--primary-color);
   padding: 10px 0px;
 }
 footer a {
   font-weight: 600;
-  color: #777777;
   margin-right: 5px;
+  color: #b3ff00;
 }
 /* ============  Footer   End ============= */
 
