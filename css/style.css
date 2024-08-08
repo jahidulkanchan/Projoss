@@ -2,9 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 :root {
   --primary-color: #070806;
+  --light-dark: #131412;
   --light-green: #a7ed04;
   --secondary-color: #ffffff;
-  --dark-green: #08b76b;
 }
 * {
   margin: 0;
@@ -33,7 +33,7 @@ a {
   position: relative;
   display: inline-block;
   padding: 10px 30px;
-  color: #4e4e4e;
+  color: #000000;
   background-color: var(--light-green);
   border: 1px solid var(--light-green);
   filter: drop-shadow(5px 15px 20px #a7ed0451);
@@ -65,7 +65,7 @@ h1 span{
   color: var(--light-green);
 }
 p{
-  color: #acacac;
+  color: #8b8b8b;
   font-family: "Inter", sans-serif;
 }
 /* ============= Scroll to Top Start ================ */
@@ -78,7 +78,7 @@ p{
   display: none;
   place-items: center;
   border-radius: 50%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  filter: drop-shadow(0px 0px 10px #a7ed04ce);
   cursor: pointer;
   z-index: 9999;
 }
@@ -92,7 +92,7 @@ p{
   place-items: center;
   font-size: 20px;
   font-weight: 700;
-  color: #b3ff00;
+  color: var(--light-green);
 }
 /* ============= Scroll to Top End ================ */
 /* ============ Typhography  End ============= */
@@ -102,8 +102,9 @@ p{
 header {
   width: 100%;
   top: -40px;
-  position: sticky;
-  background-color: var(--primary-color);
+  position: fixed;
+  background-color: #0000002d;
+  backdrop-filter: blur(5px);
   min-height: 100px;
   z-index: 999999;
 }
@@ -349,10 +350,6 @@ header .menu-bar i {
   padding-bottom: 50px;
   min-height: 700px;
   background-color: var(--primary-color);
-  /* background-image: url('../images/Shape-7.png');
-  background-size: cover;
-  background-position: top center;
-  background-repeat: no-repeat; */
 }
 .service-items .item {
   display: flex;
@@ -363,11 +360,9 @@ header .menu-bar i {
   min-height: 140px;
   padding: 5px;
   margin: 10px 0px;
-  color: #000000;
-  background-color: #ffffff;
-  box-shadow: 5px 5px 10px #77777726;
-  backdrop-filter: blur(5px);
-  border-radius: 5px;
+  border-radius: 8px;
+  color: #ffffff;
+  background-color: #131412;
   font-size: 20px;
   font-weight: 600;
   overflow: hidden;
@@ -392,6 +387,7 @@ header .menu-bar i {
   margin-bottom: 5px;
   width: 40px;
   height: 40px;
+  filter: drop-shadow(0px 0px 10px #93d2008a);
 }
 /* ============  Our Service  End ============= */
 
@@ -402,7 +398,8 @@ header .menu-bar i {
 }
 .token-contact .cards {
   padding: 20px 0px;
-  background-color: #08b76b37;
+  color: var(--secondary-color);
+  background-color: var(--light-dark);
 }
 /* ============ contact token  End ============= */
 
@@ -414,8 +411,9 @@ header .menu-bar i {
   position: relative;
   min-height: 200px;
   padding: 5px 10px;
-  box-shadow: 0px 3px 15px #d3d3d39f;
+  box-shadow: 0px 0px 10px #ffffff20;
   margin: 5px;
+  background-color: var(--light-dark);
 }
 .project-section .item:hover .btn-primary a {
   transform: scale(1);
@@ -426,11 +424,11 @@ header .menu-bar i {
   font-size: 35px;
   border: none;
   background: none;
-  color: #000000;
+  color: var(--light-green);
 }
 .project-section .owl-theme .owl-nav [class*="owl-"]:hover {
   background: none;
-  color: #000000;
+  color: var(--secondary-color);
   text-decoration: none;
 }
 .project-section .btn-primary {
@@ -660,7 +658,7 @@ footer a {
     margin: 8px 0px;
   }
   header .menu-bar {
-    color: var(--light-green);
+    color: var(--secondary-color);
     display: block;
   }
 
@@ -680,11 +678,8 @@ footer a {
   .hero-section{
     min-height: 500px;
   }
-  .hero-section h1{
-    font-size: 2rem;
-  }
   .hero-section .hero-content p{
-    font-size: 12px;
+    font-size: 14px;
   }
   .header-menu ul {
     top: 107px;
