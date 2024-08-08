@@ -1,6 +1,9 @@
 /* ============  Typhography  Start ============= */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 :root {
-  --primary-color: #fcfcfc;
+  --primary-color: #070806;
+  --light-green: #a7ed04;
+  --secondary-color: #ffffff;
   --dark-green: #08b76b;
 }
 * {
@@ -23,55 +26,43 @@ ul {
   list-style: none;
 }
 a {
+  font-family: 'Inter', sans-serif;
   text-decoration: none;
 }
-.btn-primary a {
+.primary-btn a {
   position: relative;
   display: inline-block;
-  border: none;
-  padding: 12px 30px;
-  color: #ffffff;
-  background-color: #ffffff;
-  box-shadow: 0px 0px 10px rgba(128, 128, 128, 0.112);
-  border-radius: 8px;
+  padding: 10px 30px;
+  color: #000000;
+  background-color: var(--light-green);
+  border: 1px solid var(--light-green);
+  filter: drop-shadow(5px 15px 20px #a7ed0451);
+  border-radius: 4px;
   font-weight: 700;
   overflow: hidden;
-  transition: color 0.2s ease; /* Transition for text color */
+  transition: all 0.2s ease-out;
   z-index: 2;
 }
-.btn-primary a:hover {
-  color: #000000;
+.primary-btn a:hover {
+  color: var(--secondary-color);
+  background-color: transparent;
 }
-.btn-primary a::before,
-.btn-primary a::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 50%;
-  transition: transform 0.3s ease; /* Transition for the animations */
-  z-index: -1; /* Positioned behind the text */
-  background-color: var(--dark-green);
+.revesre-btn a{
+  background-color: transparent;
+  color: var(--secondary-color);
 }
-.btn-primary a::before {
-  /* Red color */
-  left: 0; /* Start from the left */
-  top: 0;
-  transform: translateX(0%); /* Initially hidden */
-}
-.btn-primary a::after {
-  /* Green color */
-  right: 0; /* Start from the right */
-  bottom: 0;
-  transform: translateX(0%); /* Initially hidden */
-}
-.btn-primary a:hover::before {
-  transform: translateX(-100%);
-}
-.btn-primary a:hover::after {
-  transform: translateX(100%);
+.revesre-btn a:hover{
+  color: var(--primary-color);
+  background-color: var(--light-green);
 }
 .top-content h1 {
+  font-family: "Roboto", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
   font-size: 3.5rem;
+}
+p{
+  color: #acacac;
+  font-family: "Inter", sans-serif;
 }
 /* ============= Scroll to Top Start ================ */
 #progress {
@@ -108,7 +99,7 @@ header {
   width: 100%;
   top: -40px;
   position: sticky;
-  background: linear-gradient(180deg, #e3e3e3, #fcfcfc);
+  background-color: var(--primary-color);
   min-height: 100px;
   z-index: 999999;
 }
@@ -120,8 +111,9 @@ header .logo img {
   width: 180px;
 }
 header .menu-bar {
+  margin-top: -10px;
   display: none;
-  font-size: 25px;
+  font-size: 30px;
 }
 header .header-btn a {
   margin-top: 5px;
@@ -144,51 +136,42 @@ header .menu-bar i {
   display: flex;
 }
 .header-menu ul li a {
-  color: #2c2c2c;
-  font-weight: 700;
+  position: relative;
+  color: #ffffff;
+  font-size: 14px;
+  letter-spacing: 1px;
   padding: 0px 5px;
-  text-shadow: -10px 10px 0px #2c2c2c00;
   transition: all 0.3s ease;
 }
-.header-menu ul li a:hover {
-  text-shadow: 0px 0px 0px #2c2c2c;
+.header-menu ul li a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 3px;
+  background-color: var(--light-green);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: all 0.3s ease;
+}
+.header-menu ul li a:hover::after {
+  transform: scaleX(1);
 }
 
 /* ============  Header End ============= */
 
 /* ============ Hero-section Start ============= */
-.hero-section {
-  background-color: #fcfcfc;
-  color: #000000;
+.hero-section{
+  min-height: 550px;
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
 }
-.hero-section h1 {
-  font-size: 55px;
-  font-weight: 700;
+.hero-section h1{
+  font-size: 4.5rem;
 }
-.hero-section p {
-  font-weight: 600;
-}
-.hero-section .image,
-.building-website .image,
-.faq-section .image {
-  filter: drop-shadow(0px 0px 40px #08b74ecc);
-}
-.hero-section .image .shadow {
-  margin-top: -24px;
-  width: 100%;
-  height: 25px;
-  border-radius: 50%;
-  background-color: #292929;
-  filter: drop-shadow(7px 10px 7px var(--dark-green));
-  animation: animated-shadow 1.4s 0s infinite alternate linear;
-}
-@keyframes animated-shadow {
-  from {
-    filter: drop-shadow(10px 10px 5px var(--dark-green));
-  }
-  to {
-    filter: drop-shadow(-10px -5px 5px var(--dark-green));
-  }
+.hero-section h1 span{
+  color: var(--light-green);
 }
 /* ============ Hero-section End ============= */
 
@@ -622,6 +605,9 @@ footer a {
 
 /* ============    Start ============= */
 @media (max-width: 992px) {
+  .hero-section h1{
+    font-size: 3.5rem;
+  }
   header .header-btn a {
     margin-top: 5px;
     padding: 8px 20px;
@@ -639,6 +625,12 @@ footer a {
   }
 }
 @media (max-width: 768px) {
+  .hero-section h1{
+    font-size: 2.5rem;
+  }
+  .hero-section .hero-content p{
+    font-size: 14px;
+  }
   #progress {
     height: 50px;
     width: 50px;
@@ -677,6 +669,7 @@ footer a {
     margin: 8px 0px;
   }
   header .menu-bar {
+    color: var(--light-green);
     display: block;
   }
 
