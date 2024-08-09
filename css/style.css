@@ -147,7 +147,8 @@ header .menu-bar i {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #1e1e1e;
+  background-color: #1e1e1e73;
+  backdrop-filter: blur(5px);
   border-radius: 5px;
 }
 .header-menu ul li a {
@@ -191,13 +192,21 @@ header.hide {
   font-size: 4.5rem;
 }
 .hero-content span{
-  margin-right: 5px;
+  margin-right: 8px;
   font-size: 16px;
+  border: 1px solid #e4e4e44c;
   color: var(--secondary-color);
-  border: 1px solid gray;
+  border-radius: 5px;
   background-color: var(--light-dark);
-  padding: 5px 10px;
+  padding: 12px 20px;
 }
+.hero-content span i{
+  color: var(--light-green);
+  border: 5px solid #ababab9a;
+  border-radius: 50px;
+  /* animation: ; */
+}
+
 .hero-content .small a {
   color: var(--light-green);
   font-size: 13px;
@@ -447,6 +456,9 @@ header.hide {
 .token-contact {
   background-color: var(--primary-color);
   padding: 40px 0px;
+}
+.token-contact .right-btn i{
+  font-size: 16px;
 }
 .token-contact .cards {
   padding: 20px 0px;
