@@ -138,7 +138,13 @@ header .menu-bar i {
   cursor: pointer;
 }
 .header-menu ul {
+  padding: 8px 20px;
+  margin-top: 10px;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1e1e1e;
+  border-radius: 5px;
 }
 .header-menu ul li a {
   position: relative;
@@ -340,13 +346,13 @@ header.hide{
   border-radius: 70px;
   content: "";
   position: absolute;
-  background: conic-gradient(#515151, #a4ea01, #a4ea01);
+  background: conic-gradient(#515151, #669101, #90ce00);
   padding: 25px;
   z-index: -1;
   animation: animated-icon 4s 0s infinite linear;
 }
 .pricing-section .badge-icon::before {
-  filter: blur(15px);
+  filter: blur(8px);
 }
 .pricing-section .card ul li {
   margin: 8px 5px 8px 25px ;
@@ -421,7 +427,7 @@ header.hide{
   margin-bottom: 10px;
   width: 40px;
   height: 40px;
-  filter: drop-shadow(0px 0px 10px #93d2008a);
+  filter: drop-shadow(0px 0px 0px #93d2008a);
 }
 /* ============  Our Service  End ============= */
 
@@ -511,10 +517,36 @@ header.hide{
   margin: 5px auto;
   width: 100px;
   height: 100px;
-  filter: invert(80%) drop-shadow(0px 0px 20px #a6ec02);
+  filter: invert(100%) drop-shadow(0px 0px 0px #a6ec02);
 }
 /* ============  Include service  End ============= */
 
+
+/* ============  Build website  Start ============= */
+.building-website {
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+}
+/* .building-website .image img{
+  filter: drop-shadow(0px 20px 20px #a4ea0150);
+} */
+.building-website .top-content h5{
+  color: var(--light-green);
+}
+.building-website .list li {
+  margin: 10px 0px;
+  padding: 10px 30px;
+  background-color: var(--light-dark);
+  /* box-shadow: 5px 0px 10px #a4ea0164; */
+  border-radius: 5px;
+}
+/* .building-website li h4{
+  color: var(--light-green);
+} */
+.building-website .list li span{
+  color: #a0a19f;
+}
+/* ============  Build website End ============= */
 
 
 /* ============ FAQ Section Start ============= */
@@ -524,9 +556,9 @@ header.hide{
   min-height: 600px;
   color: var(--secondary-color);
 }
-.faq-section .image img{
+/* .faq-section .image img{
   filter: drop-shadow( 5px 5px 10px #a4ea0197);
-}
+} */
 /*  .accordion-progress  */
 .faq-section .accordion-progress {
   padding: 50px 0px 0px 0px;
@@ -563,40 +595,16 @@ header.hide{
   background-color: var(--light-dark) !important;
 }
 .faq-section .accordion-button::after {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
-  transform: rotate(180deg);
+  background-image: url('../images/plus.svg') !important;
+  background-color: var(--secondary-color);
+  border-radius: 30px;
+  transform: rotate(-90deg);
 }
 .faq-section .accordion-button:not(.collapsed):after {
-  transform: rotate(360deg);
+  transform: rotate(45deg) !important;
 }
 
 /* ============  FAQ Section End ============= */
-
-/* ============  Build website  Start ============= */
-.building-website {
-  color: var(--secondary-color);
-  background-color: var(--primary-color);
-}
-.building-website .image img{
-  filter: drop-shadow(0px 0px 30px #a4ea0197);
-}
-.building-website .top-content h5{
-  color: var(--light-green);
-}
-.building-website .list li {
-  margin: 10px 0px;
-  padding: 10px 30px;
-  background-color: var(--light-dark);
-  /* box-shadow: 5px 0px 10px #a4ea0164; */
-  border-radius: 5px;
-}
-/* .building-website li h4{
-  color: var(--light-green);
-} */
-.building-website .list li span{
-  color: #a0a19f;
-}
-/* ============  Build website End ============= */
 
 /* ============    Start ============= */
 .care-service{
@@ -665,6 +673,9 @@ footer a {
 /* ============    Start ============= */
 .achievments-section{
   background-color: var(--primary-color);
+  background-image: url('../images/arowBg.jpg');
+  background-position:center;
+  /* background-size: cover; */
 }
 .achievments-section .item{
   margin: 10px 0px;
@@ -682,8 +693,7 @@ footer a {
   color: var(--light-green);
 }
 .counter-section {
-  background-image: url('../images/arowBg.jpg');
-  background-position: right center;
+  background-color: var(--light-dark);
   text-align: center;
   font-family: Arial, sans-serif;
 }
@@ -713,6 +723,35 @@ footer a {
   .hero-section h1{
     font-size: 3.5rem;
   }
+  .header-menu ul {
+    display: block;
+    transform: scaleY(0);
+    transform-origin: top;
+    position: absolute;
+    padding: 10px 0px;
+    top: 100px;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    background-color: #000000cd;
+    transition: all 0.2s ease-out;
+    z-index: 99999;
+  }
+  .header-menu .active {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+  .header-menu ul li:first-child {
+    margin-top: 0px;
+  }
+  .header-menu ul li {
+    margin: 8px 0px;
+  }
+  header .menu-bar {
+    color: var(--secondary-color);
+    display: block;
+  }
+
   header .header-btn a {
     margin-top: 5px;
     padding: 8px 20px;
@@ -746,35 +785,6 @@ footer a {
   .top-content h1 {
     font-size: 2.3rem;
   }
-  .header-menu ul {
-    display: block;
-    transform: scaleY(0);
-    transform-origin: top;
-    position: absolute;
-    padding: 10px 0px;
-    top: 117px;
-    left: 0;
-    text-align: center;
-    width: 100%;
-    background-color: #000000cd;
-    transition: all 0.2s ease-out;
-    z-index: 99999;
-  }
-  .header-menu .active {
-    opacity: 1;
-    transform: scaleY(1);
-  }
-  .header-menu ul li:first-child {
-    margin-top: 0px;
-  }
-  .header-menu ul li {
-    margin: 8px 0px;
-  }
-  header .menu-bar {
-    color: var(--secondary-color);
-    display: block;
-  }
-
   /* ========= */
   .technology-section .slider-images img {
     width: 50px;
