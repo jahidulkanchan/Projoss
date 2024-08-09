@@ -174,6 +174,8 @@ header.hide{
   min-height: 600px;
   color: var(--secondary-color);
   background-color: var(--primary-color);
+  background-image: url(../images/heroBg.jpg);
+  background-position: center;
 }
 .hero-section h1{
   font-size: 4.5rem;
@@ -225,7 +227,7 @@ header.hide{
   animation: brand-reverse 36s linear 0s infinite;
 }
 .slider-images img {
-  filter: grayscale(100%) drop-shadow(0px 0px 5px #a7ed045f);
+  filter: grayscale(100%);
   transition: all 0.2s ease;
   cursor: pointer;
   width: 80px;
@@ -376,6 +378,8 @@ header.hide{
   padding-bottom: 50px;
   min-height: 700px;
   background-color: var(--primary-color);
+  /* background-image: url(../images/heroBg.jpg);
+  background-position:  right; */
 }
 .service-items .item {
   font-family: 'Roboto', sans;
@@ -427,6 +431,8 @@ header.hide{
   padding: 20px 0px;
   color: var(--secondary-color);
   background-color: var(--light-dark);
+  background-image: url('../images/arowBg.jpg');
+  background-position: right center;
 }
 /* ============ contact token  End ============= */
 
@@ -482,6 +488,9 @@ header.hide{
 /* ============  Include service  Start ============= */
 .include-service {
   background-color: var(--primary-color);
+  background-image: url('../images/heroBg.jpg');
+  background-position: left center;
+  background-attachment: fixed;
 }
 .include-service .item {  
   padding: 0.8rem 1rem;
@@ -611,6 +620,8 @@ header.hide{
 /* ============    Start ============= */
 .choose-section{
   background-color: var(--primary-color);
+  background-image: url('../images/heroBg.jpg');
+  background-position: left center;
 }
 .choose-section .item{
   color: var(--secondary-color);
