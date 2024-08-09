@@ -1,5 +1,5 @@
 /* ============  Typhography  Start ============= */
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 :root {
   --primary-color: #070806;
   --light-dark: #131412;
@@ -26,7 +26,7 @@ ul {
   list-style: none;
 }
 a {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   text-decoration: none;
 }
 .primary-btn a {
@@ -47,32 +47,35 @@ a {
   color: var(--secondary-color);
   background-color: transparent;
 }
-.revesre-btn a{
+.revesre-btn a {
   background-color: transparent;
   color: var(--secondary-color);
 }
-.revesre-btn a:hover{
+.revesre-btn a:hover {
   color: var(--primary-color);
   background-color: var(--light-green);
 }
-h3,h5{
+h3,
+h5 {
   font-family: "Inter", sans-serif;
 }
-h1,h2,h4{
+h1,
+h2,
+h4 {
   font-family: "Roboto", sans-serif;
 }
 .top-content h1 {
   font-size: 3.5rem;
   color: var(--secondary-color);
 }
-h1 span{
+h1 span {
   color: var(--light-green);
 }
-p{
+p {
   color: #8b8b8b;
   font-family: "Inter", sans-serif;
 }
-li{
+li {
   font-family: "Inter", sans-serif;
   font-size: 15px;
 }
@@ -115,7 +118,7 @@ header {
   backdrop-filter: blur(5px);
   min-height: 100px;
   z-index: 999999;
-  transition: all .2s ease ;
+  transition: all 0.2s ease;
 }
 header .contact-info {
   font-weight: 600;
@@ -130,7 +133,7 @@ header .menu-bar {
   font-size: 30px;
 }
 header .primary-btn a {
-  padding: 10px 25px;
+  padding: 10px 35px;
   border-radius: 5px;
 }
 
@@ -155,7 +158,7 @@ header .menu-bar i {
   transition: all 0.3s ease;
 }
 .header-menu ul li a::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: -3px;
@@ -169,24 +172,24 @@ header .menu-bar i {
 .header-menu ul li a:hover::after {
   transform: scaleX(1);
 }
-header.hide{
+header.hide {
   transform: translateY(-120px);
 }
 
 /* ============  Header End ============= */
 
 /* ============ Hero-section Start ============= */
-.hero-section{
+.hero-section {
   min-height: 650px;
   color: var(--secondary-color);
   background-color: var(--primary-color);
   background-image: url(../images/heroBg.jpg);
   background-position: center;
 }
-.hero-section h1{
+.hero-section h1 {
   font-size: 4.5rem;
 }
-.hero-content .small a{
+.hero-content .small a {
   color: var(--light-green);
 }
 /* ============ Hero-section End ============= */
@@ -217,7 +220,7 @@ header.hide{
 }
 .animation-slider::before {
   right: 0px;
-  background: linear-gradient(-90deg,  #070806, #00000000);
+  background: linear-gradient(-90deg, #070806, #00000000);
   z-index: 2;
 }
 .animation-slider,
@@ -278,7 +281,6 @@ header.hide{
 }
 /* ============  Our Sponsor End ============= */
 
-
 /* ============ Pricing section   Start ============= */
 .pricing-section {
   padding: 20px 0px;
@@ -295,7 +297,7 @@ header.hide{
   border-radius: 15px;
   padding: 3rem 0;
   min-height: 600px;
-  background-color: var(--light-dark );
+  background-color: var(--light-dark);
   z-index: 1;
   color: #ffffff;
 }
@@ -355,7 +357,7 @@ header.hide{
   filter: blur(8px);
 }
 .pricing-section .card ul li {
-  margin: 8px 5px 8px 25px ;
+  margin: 8px 5px 8px 25px;
   display: flex;
   align-items: center;
   text-align: left;
@@ -370,7 +372,7 @@ header.hide{
     transform: rotate(360deg);
   }
 }
-.pricing-section .disable span{
+.pricing-section .disable span {
   color: #696969;
   text-decoration: line-through;
 }
@@ -391,7 +393,7 @@ header.hide{
   background-position:  right; */
 }
 .service-items .item {
-  font-family: 'Roboto', sans;
+  font-family: "Roboto", sans;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -423,7 +425,7 @@ header.hide{
 .service-items .item:hover::after {
   transform: scaleY(1);
 }
-.service-items .item .icon img{
+.service-items .item .icon img {
   margin-bottom: 10px;
   width: 40px;
   height: 40px;
@@ -440,7 +442,7 @@ header.hide{
   padding: 20px 0px;
   color: var(--secondary-color);
   background-color: var(--light-dark);
-  background-image: url('../images/arowBg.jpg');
+  background-image: url("../images/arowBg.jpg");
   background-position: right center;
 }
 /* ============ contact token  End ============= */
@@ -487,21 +489,20 @@ header.hide{
 .project-section .item:hover .primary-btn a {
   transform: scale(1);
 }
-.project-section .primary-btn a:hover{
+.project-section .primary-btn a:hover {
   color: var(--primary-color);
   background-color: var(--secondary-color);
 }
 /* ============ Our Projects End ============= */
 
-
 /* ============  Include service  Start ============= */
 .include-service {
   background-color: var(--primary-color);
-  background-image: url('../images/heroBg.jpg');
+  background-image: url("../images/heroBg.jpg");
   background-position: left center;
   background-attachment: fixed;
 }
-.include-service .item {  
+.include-service .item {
   padding: 0.8rem 1rem;
   margin: 0.8rem 0;
   color: var(--secondary-color);
@@ -510,7 +511,7 @@ header.hide{
   border-radius: 5px;
   min-height: 240px;
 }
-.include-service .item  h4{
+.include-service .item h4 {
   color: var(--light-green);
 }
 .include-service .icon img {
@@ -521,7 +522,6 @@ header.hide{
 }
 /* ============  Include service  End ============= */
 
-
 /* ============  Build website  Start ============= */
 .building-website {
   color: var(--secondary-color);
@@ -530,7 +530,7 @@ header.hide{
 /* .building-website .image img{
   filter: drop-shadow(0px 20px 20px #a4ea0150);
 } */
-.building-website .top-content h5{
+.building-website .top-content h5 {
   color: var(--light-green);
 }
 .building-website .list li {
@@ -543,11 +543,10 @@ header.hide{
 /* .building-website li h4{
   color: var(--light-green);
 } */
-.building-website .list li span{
+.building-website .list li span {
   color: #a0a19f;
 }
 /* ============  Build website End ============= */
-
 
 /* ============ FAQ Section Start ============= */
 
@@ -575,7 +574,7 @@ header.hide{
 }
 .faq-section .accordion-button {
   font-size: 20px;
-  font-family: 'Inter';
+  font-family: "Inter";
   border: none !important;
   outline: none !important;
   color: var(--secondary-color) !important;
@@ -595,7 +594,7 @@ header.hide{
   background-color: var(--light-dark) !important;
 }
 .faq-section .accordion-button::after {
-  background-image: url('../images/plus.svg') !important;
+  background-image: url("../images/plus.svg") !important;
   background-color: var(--secondary-color);
   border-radius: 30px;
   transform: rotate(-90deg);
@@ -607,48 +606,48 @@ header.hide{
 /* ============  FAQ Section End ============= */
 
 /* ============    Start ============= */
-.care-service{
+.care-service {
   background-color: var(--primary-color);
 }
-.care-service .item{
+.care-service .item {
   margin: 10px auto;
   background-color: var(--light-dark);
   min-height: 323px;
 }
-.care-service .item .icon{
+.care-service .item .icon {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #303030;
   min-height: 150px;
 }
-.care-service .item .icon img{
+.care-service .item .icon img {
   width: 100px;
   height: 100px;
 }
 /* ============    End ============= */
 
 /* ============    Start ============= */
-.choose-section{
+.choose-section {
   background-color: var(--primary-color);
-  background-image: url('../images/heroBg.jpg');
+  background-image: url("../images/heroBg.jpg");
   background-position: left center;
 }
-.choose-section .item{
+.choose-section .item {
   color: var(--secondary-color);
   background-color: var(--light-dark);
   padding: 0.8rem 1rem;
   margin: 0.8rem 0;
   border-radius: 5px;
   min-height: 306px;
-  }
-  .choose-section .item h4{
-    color: var(--light-green);
-  }
-  .choose-section .icon img {
-    margin: 15px auto;
-    width: 100px;
-    height: 100px;
+}
+.choose-section .item h4 {
+  color: var(--light-green);
+}
+.choose-section .icon img {
+  margin: 15px auto;
+  width: 100px;
+  height: 100px;
 }
 /* ============    End ============= */
 
@@ -665,22 +664,17 @@ footer a {
 }
 /* ============  Footer   End ============= */
 
-
-
-
-
-
 /* ============    Start ============= */
-.achievments-section{
+.achievments-section {
   background-color: var(--primary-color);
-  background-image: url('../images/arowBg.jpg');
-  background-position:center;
+  background-image: url("../images/arowBg.jpg");
+  background-position: center;
   /* background-size: cover; */
 }
-.achievments-section .item{
+.achievments-section .item {
   margin: 10px 0px;
 }
-.achievments-section .icon{
+.achievments-section .icon {
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -708,7 +702,6 @@ footer a {
 }
 /* ============    End ============= */
 
-
 /* ============    Start ============= */
 /* ============    End ============= */
 /* ============    Start ============= */
@@ -720,8 +713,12 @@ footer a {
 
 /* ============    Start ============= */
 @media (max-width: 992px) {
-  .hero-section h1{
+  .hero-section h1 {
     font-size: 3.5rem;
+  }
+  header .primary-btn a {
+    padding: 7px 25px;
+    border-radius: 5px;
   }
   .header-menu ul {
     display: block;
@@ -769,7 +766,7 @@ footer a {
   }
 }
 @media (max-width: 768px) {
-  .hero-section h1{
+  .hero-section h1 {
     font-size: 3rem;
   }
   #progress {
@@ -798,7 +795,7 @@ footer a {
   }
 }
 @media (max-width: 576px) {
-  .hero-section .hero-content p{
+  .hero-section .hero-content p {
     font-size: 14px;
   }
   header .logo img {
@@ -807,7 +804,8 @@ footer a {
   header .location {
     display: none;
   }
-  .top-content p ,.choose-section .item p{
+  .top-content p,
+  .choose-section .item p {
     font-size: 14px;
   }
   .include-service .icon img {
@@ -817,8 +815,8 @@ footer a {
   .include-service .item {
     padding: 0.8rem 0rem;
   }
-  .include-service .item p{
-    font-size: .9rem;
+  .include-service .item p {
+    font-size: 0.9rem;
   }
   .technology-section .slider-images img {
     width: 40px;
@@ -829,8 +827,8 @@ footer a {
   .faq-section .accordion-button {
     font-size: 18px;
   }
-  .choose-section .item{
-    padding: 0.8rem .5rem;
-    }
+  .choose-section .item {
+    padding: 0.8rem 0.5rem;
+  }
 }
 /* ============    End ============= */
