@@ -660,7 +660,29 @@ footer a {
 
 
 /* ============    Start ============= */
+.achievments-section{
+  background-color: var(--primary-color);
+}
+/* .achievments-section .container{
+  
+} */
+.counter-section {
+  background-image: url('../images/arowBg.jpg');
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+.counter {
+  font-size: 50px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 20px 0px;
+}
+.counter-description {
+  color: #a6ff00;
+}
 /* ============    End ============= */
+
+
 /* ============    Start ============= */
 /* ============    End ============= */
 /* ============    Start ============= */
