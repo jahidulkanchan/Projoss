@@ -36,7 +36,7 @@ a {
   color: #000000;
   background-color: var(--light-green);
   border: 1px solid var(--light-green);
-  filter: drop-shadow(5px 15px 20px #a7ed0451);
+  filter: drop-shadow(5px 15px 10px #a7ed0451);
   border-radius: 4px;
   font-weight: 700;
   overflow: hidden;
@@ -117,7 +117,7 @@ header {
   top: 0px;
   background-color: #0000002d;
   backdrop-filter: blur(5px);
-  min-height: 100px;
+  min-height: 60px;
   z-index: 999999;
   transition: all 0.2s ease;
 }
@@ -143,9 +143,10 @@ header .menu-bar i {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #1e1e1e73;
   backdrop-filter: blur(5px);
   border-radius: 5px;
+  border: 1px solid #84848433;
+  background-color: #0000008c;
 }
 .header-menu ul li a {
   position: relative;
@@ -187,7 +188,7 @@ header.hide {
 .hero-section h1 {
   font-size: 4.5rem;
 }
-.hero-content .small{
+.hero-content .small {
   margin: 0 auto;
   position: relative;
   width: 300px;
@@ -199,34 +200,38 @@ header.hide {
   background-color: #000000;
   padding: 12px 20px;
 }
-.hero-content .small::after{
+.hero-content .small::after {
   position: absolute;
-  content: '';
+  content: "";
   top: 50%;
   left: 50%;
   border-radius: 5px;
-  transform: translate(-50% , -50%);
+  transform: translate(-50%, -50%);
   width: 305px;
   height: 55px;
   padding: 20px;
-  background-image: conic-gradient(from var(--angle), transparent 80%, var(--light-green));
+  background-image: conic-gradient(
+    from var(--angle),
+    transparent 80%,
+    var(--light-green)
+  );
   z-index: -1;
   animation: spiner 3s 0s linear infinite;
 }
-@property --angle{
-  syntax: '<angle>';
+@property --angle {
+  syntax: "<angle>";
   initial-value: 0deg;
   inherits: false;
 }
 @keyframes spiner {
-  from{
+  from {
     --angle: 0deg;
   }
-  to{
+  to {
     --angle: 360deg;
   }
 }
-.hero-content .small .fa-circle{
+.hero-content .small .fa-circle {
   font-size: 10px;
   color: var(--light-green);
   box-shadow: 0px 0px 0px 5px #6bc90028;
@@ -484,7 +489,7 @@ header.hide {
   background-color: var(--primary-color);
   padding: 40px 0px;
 }
-.token-contact .right-btn i{
+.token-contact .right-btn i {
   font-size: 16px;
 }
 .token-contact .cards {
@@ -774,13 +779,16 @@ footer a {
     transform-origin: top;
     position: absolute;
     padding: 10px 0px;
-    top: 100px;
+    top: 70px;
     left: 0;
     text-align: center;
     width: 100%;
     background-color: #000000cd;
     transition: all 0.2s ease-out;
     z-index: 99999;
+  }
+  .primary-btn a {
+    padding: 10px 15px;
   }
   .header-menu .active {
     opacity: 1;
