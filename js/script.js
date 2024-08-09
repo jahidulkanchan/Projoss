@@ -79,32 +79,19 @@ new WOW().init();
 
 
 // Counter Number
-$(function () {
+$(function() {
   let counterActivated = false;
 
-  $(window).on("scroll", function () {
-    if (
-      !counterActivated &&
-      $(window).scrollTop() >
-        $("#counter-section").offset().top - window.innerHeight
-    ) {
-      $(".counter").each(function () {
-        $(this)
-          .prop("Counter", 0)
-          .animate(
-            {
-              Counter: $(this).data("count"),
-            },
-            {
-              duration: 2000,
-              easing: "swing",
-              step: function (now) {
-                $(this).text(Math.floor(now));
-              },
-            }
-          );
-      });
-      counterActivated = true;
-    }
+  $(window).on("scroll", () => {
+      if (!counterActivated && $(window).scrollTop() > $("#counter-section").offset().top - window.innerHeight) {
+          $(".counter").each(function() {
+              $(this).prop("Counter", 0).animate({ Counter: $(this).data("count") }, {
+                  duration: 2000,
+                  easing: "swing",
+                  step: now => $(this).text(Math.floor(now))
+              });
+          });
+          counterActivated = true;
+      }
   });
 });

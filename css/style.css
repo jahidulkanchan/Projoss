@@ -663,22 +663,34 @@ footer a {
 .achievments-section{
   background-color: var(--primary-color);
 }
-/* .achievments-section .container{
-  
-} */
+.achievments-section .item{
+  margin: 10px 0px;
+}
+.achievments-section .icon{
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  border: 1px solid var(--light-green);
+  color: var(--light-green);
+}
 .counter-section {
   background-image: url('../images/arowBg.jpg');
   text-align: center;
   font-family: Arial, sans-serif;
 }
 .counter {
-  font-size: 50px;
+  font-size: 3rem;
   font-weight: bold;
   color: #ffffff;
-  margin: 20px 0px;
+  margin: 5px 0px;
 }
 .counter-description {
-  color: #a6ff00;
+  color: var(--light-green);
 }
 /* ============    End ============= */
 
