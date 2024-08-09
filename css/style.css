@@ -608,7 +608,7 @@ header.hide{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--secondary-color);
+  background-color: #303030;
   min-height: 150px;
 }
 .care-service .item .icon img{
