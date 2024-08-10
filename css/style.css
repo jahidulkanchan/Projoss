@@ -17,6 +17,7 @@ html {
 }
 body {
   overflow-x: hidden;
+  background-color: var(--primary-color);
 }
 img {
   width: 100%;
