@@ -710,11 +710,11 @@ header.hide {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 15px 0px;
+  margin: 10px 0px;
   width: 50px;
   height: 50px;
-  /* background-color: #242522; */
-  border: 1px solid #8cff0031;
+  background-color: #242522;
+  /* border: 1px solid #8cff0015; */
 }
 .choose-section .icon img {
   width: 40px;
@@ -840,7 +840,7 @@ footer a {
 }
 @media (max-width: 768px) {
   .hero-section h1 {
-    font-size: 3rem;
+    font-size: 2.9rem;
   }
   #progress {
     height: 50px;
@@ -858,7 +858,8 @@ footer a {
   .service-items .item {
     font-size: 16px;
   }
-  .include-service .item h4 {
+  .include-service .item h4,
+  .choose-section .item h4 {
     font-size: 18px;
   }
   .include-service .item {
@@ -890,8 +891,8 @@ footer a {
     font-size: 14px;
   }
   .include-service .icon img {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
   }
   .include-service .item {
     padding: 0.8rem 0rem;
@@ -906,10 +907,18 @@ footer a {
     font-size: 12px;
   }
   .faq-section .accordion-button {
-    font-size: 18px;
+    font-size: 16px;
   }
   .choose-section .item {
-    padding: 0.8rem 0.5rem;
+    padding: 0.5rem 0.5rem;
+  }
+  .choose-section .icon {
+    width: 40px;
+    height: 40px;
+  }
+  .choose-section .icon img{
+    width: 30px;
+    height: 30px;
   }
 }
 /* ============    End ============= */
