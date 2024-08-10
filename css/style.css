@@ -128,19 +128,19 @@ header .logo img {
 header .menu-bar {
   display: none;
 }
-header .menu-bar img{
+header .menu-bar img {
   width: 26px;
 }
 header .primary-btn a {
   padding: 10px 35px;
   border-radius: 5px;
 }
-header .primary-btn img{
-width: 25px;
-padding-right: 5px;
-transition: all .2s ease;
+header .primary-btn img {
+  width: 25px;
+  padding-right: 5px;
+  transition: all 0.2s ease;
 }
-header .primary-btn:hover img{
+header .primary-btn:hover img {
   filter: invert(100%);
 }
 
@@ -706,7 +706,7 @@ header.hide {
 .choose-section .item h4 {
   color: var(--secondary-color);
 }
-.choose-section .icon{
+.choose-section .icon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -853,9 +853,17 @@ footer a {
     width: 160px;
   }
   .top-content h1 {
-    font-size: 2.3rem;
+    font-size: 2.2rem;
   }
-  /* ========= */
+  .service-items .item {
+    font-size: 16px;
+  }
+  .include-service .item h4 {
+    font-size: 18px;
+  }
+  .include-service .item {
+    min-height: 180px;
+  }
   .technology-section .slider-images img {
     width: 50px;
     margin: 0 10px;
