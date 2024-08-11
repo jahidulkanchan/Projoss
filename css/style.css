@@ -747,14 +747,14 @@ footer .box p{
   font-size: 14px;
   color: #686868;
 }
-footer ul li a{
+footer ul li a,footer .copy{
   color: #686868;
 }
 footer .social-icon i{
   color: #ffffff;
 }
 footer .copyright a{
-  color: var(--light-green);
+  color: #83bc00;
 }
 /* ============  Footer   End ============= */
 
@@ -905,5 +905,8 @@ footer .copyright a{
     width: 30px;
     height: 30px;
   }
+  footer ul li a {
+    font-size: 13px;
+}
 }
 /* ============  Media Query End ============= */
