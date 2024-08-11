@@ -662,7 +662,7 @@ header.hide {
 /* ============  Achievments section  Start ============= */
 .achievments-section {
   background-color: var(--primary-color);
-  background-image: url("../images/arowBg.jpg");
+  background-image: url("../images/heroBg.jpg");
   background-position: center;
 }
 .achievments-section .item {
