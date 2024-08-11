@@ -728,15 +728,29 @@ header.hide {
 
 /* ============  Footer  Start ============= */
 footer {
-  color: #7f7f7f;
+  color: #ffffff;
   background-color: var(--primary-color);
   padding: 10px 0px;
 }
-footer a {
-  font-weight: 600;
-  margin-right: 5px;
-  color: var(--light-green);
+footer .footer-icon img{
+  width: 150px;
 }
+footer .box{
+  min-height: 200px;
+  border-radius: 12px;
+  background-color: var(--light-dark);
+}
+footer .left-card{
+  display: flex;
+}
+footer .box p{
+  font-size: 14px;
+  color: #686868;
+}
+footer ul li a{
+  color: #686868;
+}
+
 /* ============  Footer   End ============= */
 
 /* ============    Start ============= */
