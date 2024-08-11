@@ -63,7 +63,6 @@ h5 {
 h1,
 h2,
 h4 {
-  /* font-family: "Roboto", sans-serif; */
   font-family: "Inter", sans-serif;
 }
 .top-content h1 {
@@ -111,7 +110,6 @@ li {
 /* ============ Typhography  End ============= */
 
 /* ============ Header Start ============= */
-
 header {
   position: fixed;
   width: 100%;
@@ -184,7 +182,6 @@ header .menu-bar i {
 header.hide {
   transform: translateY(-120px);
 }
-
 /* ============  Header End ============= */
 
 /* ============ Hero-section Start ============= */
@@ -244,7 +241,6 @@ header.hide {
   color: var(--light-green);
   box-shadow: 0px 0px 0px 5px #75db0030;
   border-radius: 50px;
-  /* animation: ; */
 }
 
 .hero-content .small a {
@@ -253,7 +249,7 @@ header.hide {
 }
 /* ============ Hero-section End ============= */
 
-/* ============  Our Sponsor  Start ============= */
+/* ============  Technology  Start ============= */
 .technology-section {
   background-color: var(--primary-color);
   padding: 30px 0;
@@ -264,7 +260,6 @@ header.hide {
 .animation-slider {
   position: relative;
 }
-
 .animation-slider::after,
 .animation-slider::before {
   top: 0;
@@ -306,9 +301,6 @@ header.hide {
   margin: 0 40px;
   padding: 0x 40px;
 }
-/* .animation-reverse img{
-  filter: grayscale(0%);
-} */
 .slider-images .tech {
   text-align: center;
   display: inline-block;
@@ -316,12 +308,6 @@ header.hide {
   font-weight: 600;
   user-select: none;
 }
-/* .slider-images img:hover {
-  filter: grayscale(0%);
-} */
-/* .animation-slider:hover .slider-images {
-  animation-play-state: paused;
-} */
 @keyframes brand {
   from {
     transform: translateX(0);
@@ -338,7 +324,145 @@ header.hide {
     transform: translateX(0);
   }
 }
-/* ============  Our Sponsor End ============= */
+/* ============  Technology End ============= */
+
+/* ============  Our Service  Start ============= */
+.service-section {
+  padding-bottom: 50px;
+  min-height: 700px;
+  background-color: var(--primary-color);
+}
+.service-items .item {
+  font-family: "Poppins", sans;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  min-height: 140px;
+  padding: 5px;
+  margin: 10px 0px;
+  border-radius: 0px 30px;
+  color: #ffffff;
+  background-color: #131412;
+  font-size: 20px;
+  overflow: hidden;
+  z-index: 2;
+}
+.service-items .item::after {
+  top: 0;
+  left: 0;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary-color);
+  z-index: -1;
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: all 0.2s ease;
+}
+.service-items .item:hover::after {
+  transform: scaleY(1);
+}
+.service-items .item .icon img {
+  margin-bottom: 10px;
+  width: 40px;
+  height: 40px;
+  filter: drop-shadow(0px 0px 0px #93d2008a);
+}
+/* ============  Our Service  End ============= */
+
+/* ============ contact token   Start ============= */
+.token-contact {
+  background-color: var(--primary-color);
+  padding: 40px 0px;
+}
+.token-contact .right-btn i {
+  font-size: 16px;
+}
+.token-contact .cards {
+  padding: 20px 0px;
+  color: var(--secondary-color);
+  background-color: var(--light-dark);
+  background-image: url("../images/arowBg.jpg");
+  background-position: right center;
+}
+/* ============ contact token  End ============= */
+
+
+/* ============ Our Projects Start ============= */
+.project-section {
+  background-color: var(--primary-color);
+}
+.project-section .item {
+  position: relative;
+  min-height: 200px;
+  padding: 5px 10px;
+  box-shadow: 0px 0px 10px #ffffff20;
+  margin: 5px;
+  background-color: var(--light-dark);
+}
+.project-section .owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel button.owl-dot {
+  font-size: 35px;
+  border: none;
+  background: none;
+  color: var(--light-green);
+}
+.project-section .owl-theme .owl-nav [class*="owl-"]:hover {
+  background: none;
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+.project-section .primary-btn {
+  text-align: center;
+  bottom: 10px;
+  right: 0px;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+}
+.project-section .primary-btn a {
+  background-color: var(--light-green);
+  box-shadow: 0px 5px 20px #202020a3;
+  transform: scale(0);
+  transition: all 0.4s ease;
+}
+.project-section .item:hover .primary-btn a {
+  transform: scale(1);
+}
+.project-section .primary-btn a:hover {
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+}
+/* ============ Our Projects End ============= */
+
+/* ============  Include service  Start ============= */
+.include-service {
+  background-color: var(--primary-color);
+}
+.include-service .item {
+  padding: 0.8rem 1rem;
+  margin: 0.8rem 0;
+  color: var(--secondary-color);
+  background-color: var(--light-dark);
+  backdrop-filter: blur(5px);
+  border-radius: 5px;
+  min-height: 240px;
+}
+.include-service .item h4 {
+  color: var(--light-green);
+}
+.include-service .icon img {
+  margin: 5px auto;
+  width: 100px;
+  height: 100px;
+  filter: invert(100%) drop-shadow(0px 0px 0px #a6ec02);
+}
+/* ============  Include service  End ============= */
+
 
 /* ============ Pricing section   Start ============= */
 .pricing-section {
@@ -446,155 +570,11 @@ header.hide {
 }
 /* ============ Pricing section   End ============= */
 
-/* ============  Our Service  Start ============= */
-.service-section {
-  padding-bottom: 50px;
-  min-height: 700px;
-  background-color: var(--primary-color);
-  /* background-image: url(../images/heroBg.jpg);
-  background-position:  right; */
-}
-.service-items .item {
-  font-family: "Poppins", sans;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  min-height: 140px;
-  padding: 5px;
-  margin: 10px 0px;
-  border-radius: 0px 30px;
-  color: #ffffff;
-  background-color: #131412;
-  font-size: 20px;
-  overflow: hidden;
-  z-index: 2;
-}
-.service-items .item::after {
-  top: 0;
-  left: 0;
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: var(--primary-color);
-  z-index: -1;
-  transform: scaleY(0);
-  transform-origin: bottom;
-  transition: all 0.2s ease;
-}
-.service-items .item:hover::after {
-  transform: scaleY(1);
-}
-.service-items .item .icon img {
-  margin-bottom: 10px;
-  width: 40px;
-  height: 40px;
-  filter: drop-shadow(0px 0px 0px #93d2008a);
-}
-/* ============  Our Service  End ============= */
-
-/* ============ contact token   Start ============= */
-.token-contact {
-  background-color: var(--primary-color);
-  padding: 40px 0px;
-}
-.token-contact .right-btn i {
-  font-size: 16px;
-}
-.token-contact .cards {
-  padding: 20px 0px;
-  color: var(--secondary-color);
-  background-color: var(--light-dark);
-  background-image: url("../images/arowBg.jpg");
-  background-position: right center;
-}
-/* ============ contact token  End ============= */
-
-/* ============ Our Projects Start ============= */
-.project-section {
-  background-color: var(--primary-color);
-}
-.project-section .item {
-  position: relative;
-  min-height: 200px;
-  padding: 5px 10px;
-  box-shadow: 0px 0px 10px #ffffff20;
-  margin: 5px;
-  background-color: var(--light-dark);
-}
-.project-section .owl-carousel .owl-nav button.owl-next,
-.owl-carousel .owl-nav button.owl-prev,
-.owl-carousel button.owl-dot {
-  font-size: 35px;
-  border: none;
-  background: none;
-  color: var(--light-green);
-}
-.project-section .owl-theme .owl-nav [class*="owl-"]:hover {
-  background: none;
-  color: var(--secondary-color);
-  text-decoration: none;
-}
-.project-section .primary-btn {
-  text-align: center;
-  bottom: 10px;
-  right: 0px;
-  left: 0;
-  margin: 0 auto;
-  position: absolute;
-}
-.project-section .primary-btn a {
-  background-color: var(--light-green);
-  box-shadow: 0px 5px 20px #202020a3;
-  transform: scale(0);
-  transition: all 0.4s ease;
-}
-.project-section .item:hover .primary-btn a {
-  transform: scale(1);
-}
-.project-section .primary-btn a:hover {
-  color: var(--primary-color);
-  background-color: var(--secondary-color);
-}
-/* ============ Our Projects End ============= */
-
-/* ============  Include service  Start ============= */
-.include-service {
-  background-color: var(--primary-color);
-  /* background-image: url("../images/heroBg.jpg");
-  background-position: left center;
-  background-attachment: fixed; */
-}
-.include-service .item {
-  padding: 0.8rem 1rem;
-  margin: 0.8rem 0;
-  color: var(--secondary-color);
-  background-color: var(--light-dark);
-  backdrop-filter: blur(5px);
-  border-radius: 5px;
-  min-height: 240px;
-}
-.include-service .item h4 {
-  color: var(--light-green);
-}
-.include-service .icon img {
-  margin: 5px auto;
-  width: 100px;
-  height: 100px;
-  filter: invert(100%) drop-shadow(0px 0px 0px #a6ec02);
-}
-/* ============  Include service  End ============= */
-
 /* ============  Build website  Start ============= */
 .building-website {
   color: var(--secondary-color);
   background-color: var(--primary-color);
 }
-/* .building-website .image img{
-  filter: drop-shadow(0px 20px 20px #a4ea0150);
-} */
 .building-website .top-content h5 {
   color: var(--light-green);
 }
@@ -605,25 +585,17 @@ header.hide {
   /* box-shadow: 5px 0px 10px #a4ea0164; */
   border-radius: 5px;
 }
-/* .building-website li h4{
-  color: var(--light-green);
-} */
 .building-website .list li span {
   color: #a0a19f;
 }
 /* ============  Build website End ============= */
 
 /* ============ FAQ Section Start ============= */
-
 .faq-section {
   background-color: var(--primary-color);
   min-height: 600px;
   color: var(--secondary-color);
 }
-/* .faq-section .image img{
-  filter: drop-shadow( 5px 5px 10px #a4ea0197);
-} */
-/*  .accordion-progress  */
 .faq-section .accordion-progress {
   padding: 50px 0px 0px 0px;
   min-height: 300px;
@@ -646,13 +618,9 @@ header.hide {
   background-color: var(--light-dark) !important;
   box-shadow: 0px 2px 10px #c7c7c72f;
 }
-/* .faq-section .accordion-item {
-  background-color: var(--primary-color) !important;
-
-} */
 .faq-section .accordion-button:focus {
   box-shadow: none !important;
-  border: 1px solid #c8ff00;
+  border: none !important;
 }
 .faq-section .accordion-button:not(.collapsed) {
   color: var(--secondary-color) !important;
@@ -667,10 +635,9 @@ header.hide {
 .faq-section .accordion-button:not(.collapsed):after {
   transform: rotate(45deg) !important;
 }
-
 /* ============  FAQ Section End ============= */
 
-/* ============    Start ============= */
+/* ============ Care Service Start ============= */
 .care-service {
   background-color: var(--primary-color);
 }
@@ -690,60 +657,13 @@ header.hide {
   width: 100px;
   height: 100px;
 }
-/* ============    End ============= */
+/* ============  Care Service End ============= */
 
-/* ============    Start ============= */
-.choose-section {
-  background-color: var(--primary-color);
-  /* background-image: url("../images/heroBg.jpg");
-  background-position: left center; */
-}
-.choose-section .item {
-  color: var(--secondary-color);
-  background-color: var(--light-dark);
-  padding: 10px 20px;
-  margin: 0.8rem 0;
-  border-radius: 5px;
-  min-height: 260px;
-}
-.choose-section .item h4 {
-  color: var(--secondary-color);
-}
-.choose-section .icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 10px 0px;
-  width: 50px;
-  height: 50px;
-  background-color: #242522;
-  /* border: 1px solid #8cff0015; */
-}
-.choose-section .icon img {
-  width: 40px;
-  height: 40px;
-}
-/* ============    End ============= */
-
-/* ============  Footer  Start ============= */
-footer {
-  color: #7f7f7f;
-  background-color: var(--primary-color);
-  padding: 10px 0px;
-}
-footer a {
-  font-weight: 600;
-  margin-right: 5px;
-  color: var(--light-green);
-}
-/* ============  Footer   End ============= */
-
-/* ============    Start ============= */
+/* ============  Achievments section  Start ============= */
 .achievments-section {
   background-color: var(--primary-color);
   background-image: url("../images/arowBg.jpg");
   background-position: center;
-  /* background-size: cover; */
 }
 .achievments-section .item {
   margin: 10px 0px;
@@ -774,7 +694,50 @@ footer a {
 .counter-description {
   color: var(--light-green);
 }
-/* ============    End ============= */
+/* ============  Achievments section  End ============= */
+
+/* ============  choose-section Start ============= */
+.choose-section {
+  background-color: var(--primary-color);
+}
+.choose-section .item {
+  color: var(--secondary-color);
+  background-color: var(--light-dark);
+  padding: 10px 20px;
+  margin: 0.8rem 0;
+  border-radius: 5px;
+  min-height: 260px;
+}
+.choose-section .item h4 {
+  color: var(--secondary-color);
+}
+.choose-section .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0px;
+  width: 50px;
+  height: 50px;
+  background-color: #242522;
+}
+.choose-section .icon img {
+  width: 40px;
+  height: 40px;
+}
+/* ============  choose-section  End ============= */
+
+/* ============  Footer  Start ============= */
+footer {
+  color: #7f7f7f;
+  background-color: var(--primary-color);
+  padding: 10px 0px;
+}
+footer a {
+  font-weight: 600;
+  margin-right: 5px;
+  color: var(--light-green);
+}
+/* ============  Footer   End ============= */
 
 /* ============    Start ============= */
 /* ============    End ============= */
@@ -785,7 +748,7 @@ footer a {
 /* ============    Start ============= */
 /* ============    End ============= */
 
-/* ============    Start ============= */
+/* ============  Media Query Start ============= */
 @media (max-width: 992px) {
   .hero-section h1 {
     font-size: 3.5rem;
@@ -924,4 +887,4 @@ footer a {
     height: 30px;
   }
 }
-/* ============    End ============= */
+/* ============  Media Query End ============= */
