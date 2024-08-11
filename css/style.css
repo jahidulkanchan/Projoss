@@ -90,7 +90,6 @@ li {
   display: none;
   place-items: center;
   border-radius: 50%;
-  filter: drop-shadow(0px 0px 10px #9fe3008e);
   cursor: pointer;
   z-index: 9999;
 }
