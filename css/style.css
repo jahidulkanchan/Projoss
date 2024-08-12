@@ -249,53 +249,6 @@ header.hide {
 }
 /* ============ Hero-section End ============= */
 
-/* ============  Our Service  Start ============= */
-.service-section {
-  padding-bottom: 50px;
-  min-height: 700px;
-  background-color: var(--primary-color);
-}
-.service-items .item {
-  font-family: "Poppins", sans;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  min-height: 140px;
-  padding: 5px;
-  margin: 10px 0px;
-  border-radius: 0px 30px;
-  color: #ffffff;
-  background-color: #131412;
-  font-size: 20px;
-  overflow: hidden;
-  z-index: 2;
-}
-.service-items .item::after {
-  top: 0;
-  left: 0;
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: var(--primary-color);
-  z-index: -1;
-  transform: scaleY(0);
-  transform-origin: bottom;
-  transition: all 0.2s ease;
-}
-.service-items .item:hover::after {
-  transform: scaleY(1);
-}
-.service-items .item .icon img {
-  margin-bottom: 10px;
-  width: 40px;
-  height: 40px;
-  filter: drop-shadow(0px 0px 0px #93d2008a);
-}
-/* ============  Our Service  End ============= */
-
 /* ============  Technology  Start ============= */
 .technology-section {
   background-color: var(--primary-color);
@@ -372,6 +325,53 @@ header.hide {
   }
 }
 /* ============  Technology End ============= */
+
+/* ============  Our Service  Start ============= */
+.service-section {
+  padding-bottom: 50px;
+  min-height: 700px;
+  background-color: var(--primary-color);
+}
+.service-items .item {
+  font-family: "Poppins", sans;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  min-height: 140px;
+  padding: 5px;
+  margin: 10px 0px;
+  border-radius: 0px 30px;
+  color: #ffffff;
+  background-color: #131412;
+  font-size: 20px;
+  overflow: hidden;
+  z-index: 2;
+}
+.service-items .item::after {
+  top: 0;
+  left: 0;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary-color);
+  z-index: -1;
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: all 0.2s ease;
+}
+.service-items .item:hover::after {
+  transform: scaleY(1);
+}
+.service-items .item .icon img {
+  margin-bottom: 10px;
+  width: 40px;
+  height: 40px;
+  filter: drop-shadow(0px 0px 0px #93d2008a);
+}
+/* ============  Our Service  End ============= */
 
 /* ============  Build website  Start ============= */
 .building-website {
