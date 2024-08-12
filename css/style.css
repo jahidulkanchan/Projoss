@@ -126,7 +126,8 @@ header .menu-bar {
   display: none;
 }
 header .menu-bar img {
-  width: 26px;
+  width: 28px;
+  filter: invert(1);
 }
 header .primary-btn a {
   padding: 10px 35px;
@@ -384,7 +385,6 @@ header.hide {
   margin: 10px 0px;
   padding: 10px 30px;
   background-color: var(--light-dark);
-  /* box-shadow: 5px 0px 10px #a4ea0164; */
   border-radius: 5px;
 }
 .building-website .list li span {
@@ -497,7 +497,7 @@ header.hide {
   border-radius: 30px;
 }
 .pricing-section .price p {
-  font-size: 14px;
+  font-size: 13px;
 }
 .pricing-section .price h2 {
   font-weight: bold;
@@ -510,6 +510,7 @@ header.hide {
 }
 .pricing-section .price h2 span {
   font-size: 25px;
+  line-height: 45px;
   margin-bottom: 10px;
   color: var(--light-green);
 }
@@ -723,7 +724,6 @@ header.hide {
 }
 /* ============  FAQ Section End ============= */
 
-
 /* ============  Footer  Start ============= */
 footer {
   color: #ffffff;
@@ -749,10 +749,10 @@ footer ul li,
 footer ul li a,
 footer .copy {
   color: #686868;
-  transition: all .2s ease;
+  transition: all 0.2s ease;
 }
 footer ul li:hover,
-footer ul li a:hover{
+footer ul li a:hover {
   color: #b5b5b5;
 }
 footer .social-icon i {
@@ -839,6 +839,9 @@ footer .copyright a {
   .service-items .item {
     font-size: 16px;
   }
+  .building-website .list li {
+    padding: 10px;
+  }
   .include-service .item h4,
   .choose-section .item h4 {
     font-size: 18px;
@@ -855,6 +858,9 @@ footer .copyright a {
   }
   .technology-section .slider-images .tech {
     font-size: 14px;
+  }
+  .accordion-header .accordion-button {
+    padding: 10px;
   }
 }
 @media (max-width: 576px) {
