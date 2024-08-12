@@ -506,12 +506,18 @@ header.hide {
 .pricing-section .card-2 {
   margin-top: 0px;
   min-height: 550px;
-  box-shadow: 0px 10px 20px #a4ea0158;
+  background: linear-gradient(#59cd00ce,#010500c1);
+  border: 1px solid var(--light-green);
 }
+.pricing-section .card-2 p{
+  color: var(--secondary-color);
+}
+
 .pricing-section .price h2 span {
   font-size: 25px;
   line-height: 45px;
   margin-bottom: 10px;
+  text-shadow: 0px 1px 8px black;
   color: var(--light-green);
 }
 .pricing-section .plan {
