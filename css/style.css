@@ -189,8 +189,7 @@ header.hide {
 .hero-section {
   min-height: 550px;
   color: var(--secondary-color);
-  /* background-color: var(--primary-color); */
-  background-image: linear-gradient(var(--primary-color), var(--light-dark));
+  background-image: linear-gradient(var(--primary-color), #131412d2);
 }
 .hero-section h1 {
   font-size: 4.5rem;
@@ -255,7 +254,7 @@ header.hide {
 .technology-section {
   /* background-color: var(--primary-color); */
   padding: 30px 0;
-  background-image: linear-gradient(0deg,var(--primary-color), var(--light-dark));
+  background-image: linear-gradient(0deg,var(--primary-color), #131412d2);
 }
 .sponsor-content {
   margin-bottom: 50px;
@@ -652,7 +651,7 @@ header.hide {
   text-align: center;
   font-family: Arial, sans-serif;
   border-radius: 12px;
-  border: 2px dashed #6a8230;
+  border: 1px dashed #698230da;
 }
 .counter {
   font-size: 3rem;
