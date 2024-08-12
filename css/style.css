@@ -751,9 +751,10 @@ footer .footer-icon img {
   width: 150px;
 }
 footer .box {
-  min-height: 200px;
+  min-height: 240px;
   border-radius: 12px;
   background-color: var(--light-dark);
+  border: 1px solid #80808055;
 }
 footer .left-card {
   display: flex;
