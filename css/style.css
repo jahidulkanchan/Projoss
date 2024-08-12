@@ -252,8 +252,9 @@ header.hide {
 
 /* ============  Technology  Start ============= */
 .technology-section {
-  background-color: var(--primary-color);
+  /* background-color: var(--primary-color); */
   padding: 30px 0;
+  background-image: linear-gradient(0deg,var(--primary-color), #131412d2);
 }
 .sponsor-content {
   margin-bottom: 50px;
@@ -904,6 +905,9 @@ footer .copyright a {
   }
   .include-service .item p {
     font-size: 0.9rem;
+  }
+  .technology-section .container{
+    padding: 0px;
   }
   .technology-section .slider-images img {
     width: 40px;
