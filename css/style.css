@@ -252,8 +252,10 @@ header.hide {
 
 /* ============  Technology  Start ============= */
 .technology-section {
-  padding: 30px 0;
-  background-image: linear-gradient(0deg,var(--primary-color), #131412d2);
+  background-color: var(--primary-color);
+}
+.technology-section .top-content {
+  background-image: linear-gradient(0deg, var(--primary-color), #131412d2);
 }
 .sponsor-content {
   margin-bottom: 50px;
@@ -410,7 +412,7 @@ header.hide {
   background-color: var(--light-dark);
   overflow: hidden;
 }
-.project-section .item img{
+.project-section .item img {
   border-radius: 7px;
 }
 .project-section .owl-carousel .owl-nav button.owl-next,
@@ -905,7 +907,7 @@ footer .copyright a {
   .include-service .item p {
     font-size: 0.9rem;
   }
-  .technology-section .container{
+  .technology-section .container {
     padding: 0;
   }
   .technology-section .slider-images img {
